@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belconti Resort Hotel – COP31 & IAC 2026 MICE Merkezi | Antalya Belek</title>
+<meta name="description" content="COP31 ve IAC 2026 için Belek'in stratejik buluşma noktası. Belconti Resort Hotel'de 8 toplantı salonu, sürdürülebilir konaklama ve profesyonel etkinlik hizmetleri.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark: #1a4a2e;
+    --green-mid: #2d7a4f;
+    --green-bright: #3aaa6b;
+    --green-light: #5ccc8a;
+    --green-pale: #e8f5ee;
+    --green-accent: #00c96b;
+    --gold: #3aaa6b;
+    --gold-light: #5ccc8a;
+    --white: #ffffff;
+    --gray-dark: #1a1a1a;
+    --gray-mid: #444444;
+    --gray-light: #f5f5f5;
+    --text-main: #1c1c1c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    padding: 0 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid rgba(26,74,46,0.1);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  }
+  .nav-logo { height: 42px; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    color: var(--gray-mid); text-decoration: none;
+    font-size: 13px; font-weight: 500; letter-spacing: 0.5px;
+    transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--green-mid); }
+  .nav-cta {
+    background: var(--green-bright); color: var(--white);
+    padding: 10px 22px; border-radius: 6px;
+    font-size: 13px; font-weight: 700; text-decoration: none;
+    transition: background .2s, transform .15s;
+    white-space: nowrap;
+    box-shadow: 0 2px 12px rgba(58,170,107,0.3);
+  }
+  .nav-cta:hover { background: var(--green-mid); transform: translateY(-1px); }
+
+  /* ─── HERO ─── */
+  .hero {
+    position: relative; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    background: #ffffff;
+  }
+  .hero-bg-pattern {
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 10% 20%, rgba(58,170,107,0.07) 0%, transparent 45%),
+      radial-gradient(circle at 90% 80%, rgba(58,170,107,0.05) 0%, transparent 45%),
+      radial-gradient(circle at 50% 50%, rgba(26,74,46,0.03) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.035;
+    background-image: linear-gradient(rgba(26,74,46,.6) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(26,74,46,.6) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    text-align: center; max-width: 900px;
+    padding: 120px 40px 80px;
+  }
+  .hero-badges {
+    display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 18px; border-radius: 50px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  }
+  .badge-cop { background: rgba(58,170,107,0.1); color: var(--green-mid); border: 1px solid rgba(58,170,107,0.3); }
+  .badge-iac { background: rgba(26,74,46,0.07); color: var(--green-dark); border: 1px solid rgba(26,74,46,0.18); }
+  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .hero-logo { height: 56px; margin-bottom: 36px; }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px,6vw,64px); font-weight: 700;
+    color: var(--green-dark); line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .hero-title span { color: var(--green-bright); }
+  .hero-subtitle {
+    font-size: clamp(16px,2.5vw,20px); color: var(--gray-mid);
+    font-weight: 400; margin-bottom: 48px; line-height: 1.7;
+  }
+  .hero-subtitle strong { color: var(--green-mid); font-weight: 700; }
+  .event-logos {
+    display: flex; gap: 32px; justify-content: center; align-items: center;
+    flex-wrap: wrap; margin-bottom: 40px;
+    padding: 20px 32px; background: rgba(26,74,46,0.04);
+    border-radius: 14px; border: 1px solid rgba(26,74,46,0.08);
+  }
+  .event-logo-item { display: flex; align-items: center; }
+  .event-logo-item img { height: 56px; object-fit: contain; }
+  .event-logo-divider { width: 1px; height: 48px; background: rgba(26,74,46,0.12); }
+  .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--green-bright), var(--green-mid));
+    color: var(--white); padding: 16px 36px;
+    border-radius: 8px; text-decoration: none;
+    font-size: 15px; font-weight: 700; letter-spacing: 0.3px;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 4px 24px rgba(58,170,107,0.35);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(58,170,107,0.5); }
+  .btn-secondary {
+    background: transparent; color: var(--green-dark);
+    border: 2px solid rgba(26,74,46,0.25);
+    padding: 14px 36px; border-radius: 8px;
+    text-decoration: none; font-size: 15px; font-weight: 600;
+    transition: border-color .2s, background .2s;
+  }
+  .btn-secondary:hover { border-color: var(--green-bright); background: rgba(58,170,107,0.05); }
+  .hero-scroll {
+    position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    color: rgba(26,74,46,0.3); font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  }
+  .scroll-arrow { width: 20px; height: 20px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); animation: bounce 1.5s infinite; }
+  @keyframes bounce { 0%,100% { transform: rotate(45deg) translateY(0); } 50% { transform: rotate(45deg) translateY(4px); } }
+
+  /* ─── EVENT STRIP ─── */
+  .event-strip {
+    background: var(--green-dark);
+    display: flex; flex-wrap: wrap;
+  }
+  .event-card {
+    flex: 1; min-width: 280px;
+    padding: 36px 48px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    position: relative; overflow: hidden;
+  }
+  .event-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  }
+  .event-card.cop::before { background: linear-gradient(90deg, var(--green-bright), var(--green-light)); }
+  .event-card.iac::before { background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+  .event-card-inner { display: flex; align-items: flex-start; gap: 24px; }
+  .event-card-logo { flex-shrink: 0; }
+  .event-card-logo img { height: 64px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.92; }
+  .event-card-body { flex: 1; }
+  .event-label {
+    font-size: 10px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .event-card.cop .event-label { color: var(--green-light); }
+  .event-card.iac .event-label { color: var(--gold-light); }
+  .event-name { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); font-weight: 600; margin-bottom: 8px; }
+  .event-date { font-size: 14px; color: rgba(255,255,255,0.65); margin-bottom: 4px; }
+  .event-venue { font-size: 13px; color: rgba(255,255,255,0.45); }
+
+  /* ─── SECTIONS ─── */
+  section { padding: 96px 40px; }
+  .container { max-width: 1140px; margin: 0 auto; }
+  .section-tag {
+    display: inline-block;
+    font-size: 11px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--green-mid); margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px,4vw,44px); font-weight: 700; color: var(--green-dark);
+    line-height: 1.25; margin-bottom: 20px;
+  }
+  .section-lead {
+    font-size: 17px; color: var(--gray-mid); line-height: 1.8;
+    max-width: 700px; margin-bottom: 48px;
+  }
+
+  /* ─── EVENTS SECTION ─── */
+  .events-section { background: var(--green-pale); }
+  .events-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .event-info-card {
+    background: var(--white); border-radius: 16px;
+    padding: 40px; box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--green-bright);
+    position: relative; overflow: hidden;
+  }
+  .event-info-card.gold-top { border-top-color: var(--gold); }
+  .event-info-card::after {
+    content: ''; position: absolute; bottom: -30px; right: -30px;
+    width: 120px; height: 120px; border-radius: 50%;
+    opacity: 0.04;
+  }
+  .event-info-card .ei-icon {
+    width: 52px; height: 52px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px; margin-bottom: 20px;
+  }
+  .ei-green { background: var(--green-pale); }
+  .ei-gold { background: #fdf6e3; }
+  .event-info-card h3 {
+    font-family: 'Playfair Display', serif; font-size: 22px; color: var(--green-dark);
+    margin-bottom: 8px;
+  }
+  .event-info-card .ei-theme {
+    font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--green-mid); margin-bottom: 16px;
+  }
+  .event-info-card p { font-size: 14.5px; color: var(--gray-mid); line-height: 1.75; margin-bottom: 20px; }
+  .event-meta-list { list-style: none; }
+  .event-meta-list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 10px 0; border-bottom: 1px solid var(--green-pale);
+    font-size: 14px; color: var(--gray-mid);
+  }
+  .event-meta-list li:last-child { border-bottom: none; }
+  .meta-icon { color: var(--green-bright); font-size: 16px; margin-top: 1px; flex-shrink: 0; }
+  .event-info-card.gold-top .meta-icon { color: var(--gold); }
+  .meta-label { font-weight: 600; color: var(--green-dark); margin-right: 4px; }
+
+  /* ─── WHY BELCONTI ─── */
+  .why-section { background: var(--white); }
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .why-card {
+    padding: 32px 28px; border-radius: 14px;
+    border: 1px solid #e8f0eb; text-align: center;
+    transition: box-shadow .25s, transform .25s;
+  }
+  .why-card:hover { box-shadow: 0 8px 40px rgba(45,122,79,0.12); transform: translateY(-3px); }
+  .why-icon {
+    width: 60px; height: 60px; border-radius: 50%;
+    background: var(--green-pale);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; margin: 0 auto 20px;
+  }
+  .why-card h4 { font-size: 17px; font-weight: 700; color: var(--green-dark); margin-bottom: 10px; }
+  .why-card p { font-size: 14px; color: var(--gray-mid); line-height: 1.7; }
+
+  /* ─── MEETING ROOMS ─── */
+  .rooms-section { background: var(--green-dark); padding: 96px 40px; }
+  .rooms-section .section-tag { color: var(--green-light); }
+  .rooms-section .section-title { color: var(--white); }
+  .rooms-section .section-lead { color: rgba(255,255,255,0.65); }
+  .rooms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .room-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px; padding: 32px;
+    transition: background .2s, border-color .2s;
+  }
+  .room-card:hover { background: rgba(58,170,107,0.1); border-color: rgba(58,170,107,0.3); }
+  .room-card.featured {
+    background: rgba(58,170,107,0.12);
+    border-color: rgba(58,170,107,0.35);
+    grid-column: span 2;
+  }
+  .room-name { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); font-weight: 600; margin-bottom: 16px; }
+  .room-stats { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 16px; }
+  .room-stat { display: flex; flex-direction: column; gap: 3px; }
+  .room-stat-value { font-size: 22px; font-weight: 800; color: var(--green-bright); }
+  .room-stat-label { font-size: 11px; color: rgba(255,255,255,0.5); letter-spacing: 0.5px; }
+  .room-desc { font-size: 13.5px; color: rgba(255,255,255,0.6); line-height: 1.7; }
+  .room-sub { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
+  .room-sub-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 13px;
+  }
+  .room-sub-item:last-child { border-bottom: none; }
+  .room-sub-name { color: rgba(255,255,255,0.75); }
+  .room-sub-cap { color: var(--green-light); font-weight: 600; }
+
+  /* ─── TECHNICAL ─── */
+  .tech-section { background: var(--white); }
+  .tech-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .tech-list { list-style: none; }
+  .tech-list li {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 0; border-bottom: 1px solid var(--green-pale);
+    font-size: 15px; color: var(--gray-mid);
+  }
+  .tech-list li::before { content: '✓'; color: var(--green-bright); font-weight: 800; font-size: 16px; flex-shrink: 0; }
+  .tech-layout-badge {
+    display: inline-block; padding: 6px 14px; border-radius: 50px;
+    background: var(--green-pale); color: var(--green-dark);
+    font-size: 12px; font-weight: 600; margin: 4px;
+  }
+
+  /* ─── SUSTAINABILITY ─── */
+  .sustain-section { background: linear-gradient(135deg, var(--green-dark) 0%, #0f3320 100%); padding: 96px 40px; }
+  .sustain-section .section-tag { color: var(--green-light); }
+  .sustain-section .section-title { color: var(--white); }
+  .sustain-section .section-lead { color: rgba(255,255,255,0.65); }
+  .sustain-stats {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    margin-bottom: 48px;
+  }
+  .stat-block {
+    text-align: center; padding: 32px 20px;
+    background: rgba(255,255,255,0.05); border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .stat-num { font-size: 42px; font-weight: 900; color: var(--green-bright); line-height: 1; margin-bottom: 8px; }
+  .stat-desc { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+  .sustain-certs { display: flex; flex-wrap: wrap; gap: 12px; }
+  .cert-badge {
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(58,170,107,0.15); border: 1px solid rgba(58,170,107,0.3);
+    border-radius: 8px; padding: 12px 20px;
+    color: var(--green-light); font-size: 13px; font-weight: 600;
+  }
+
+  /* ─── PACKAGES ─── */
+  .packages-section { background: var(--green-pale); }
+  .packages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
+  .package-card {
+    background: var(--white); border-radius: 16px;
+    padding: 36px 28px; box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    border-bottom: 4px solid var(--green-bright);
+    transition: box-shadow .25s, transform .25s;
+  }
+  .package-card:hover { box-shadow: 0 8px 48px rgba(0,0,0,0.1); transform: translateY(-4px); }
+  .package-card.gold-b { border-bottom-color: var(--gold); }
+  .package-icon { font-size: 36px; margin-bottom: 18px; }
+  .package-title { font-size: 17px; font-weight: 700; color: var(--green-dark); margin-bottom: 12px; }
+  .package-list { list-style: none; }
+  .package-list li {
+    font-size: 13.5px; color: var(--gray-mid); padding: 7px 0;
+    border-bottom: 1px solid var(--green-pale);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .package-list li::before { content: '→'; color: var(--green-mid); font-weight: 700; }
+
+  /* ─── LOCATION ─── */
+  .location-section { background: var(--white); }
+  .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .location-info { }
+  .dist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+  .dist-card {
+    padding: 20px; border-radius: 10px;
+    background: var(--green-pale); text-align: center;
+  }
+  .dist-km { font-size: 32px; font-weight: 900; color: var(--green-dark); }
+  .dist-label { font-size: 12px; color: var(--gray-mid); margin-top: 4px; }
+  .map-embed {
+    border-radius: 16px; overflow: hidden;
+    box-shadow: 0 8px 48px rgba(0,0,0,0.12);
+    aspect-ratio: 4/3;
+    background: var(--green-pale);
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 16px;
+  }
+  .map-placeholder-icon { font-size: 56px; }
+  .map-address {
+    text-align: center; color: var(--gray-mid); font-size: 14px; line-height: 1.6;
+    padding: 0 20px;
+  }
+  .map-btn {
+    background: var(--green-dark); color: var(--white);
+    padding: 12px 24px; border-radius: 8px;
+    text-decoration: none; font-size: 13px; font-weight: 600;
+    transition: background .2s;
+  }
+  .map-btn:hover { background: var(--green-mid); }
+
+  /* ─── CONTACT / FORM ─── */
+  .contact-section { background: linear-gradient(135deg, #0a1f12 0%, var(--green-dark) 100%); padding: 96px 40px; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+  .contact-info { color: rgba(255,255,255,0.85); }
+  .contact-info h2 { font-family: 'Playfair Display', serif; font-size: 36px; color: var(--white); margin-bottom: 20px; line-height: 1.3; }
+  .contact-info p { font-size: 15px; line-height: 1.8; margin-bottom: 32px; color: rgba(255,255,255,0.65); }
+  .contact-list { list-style: none; }
+  .contact-list li {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 14px; color: rgba(255,255,255,0.7);
+  }
+  .c-icon { font-size: 18px; }
+  .booking-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--white); color: var(--green-dark);
+    padding: 16px 32px; border-radius: 10px;
+    text-decoration: none; font-size: 16px; font-weight: 700;
+    margin-top: 28px; transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  }
+  .booking-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+
+  /* ─── FORM ─── */
+  .form-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px; padding: 44px 40px;
+    backdrop-filter: blur(8px);
+  }
+  .form-card h3 { font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 28px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { margin-bottom: 18px; }
+  .form-group label {
+    display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.6); margin-bottom: 8px; text-transform: uppercase;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--white); border-radius: 8px;
+    padding: 13px 16px; font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color .2s, background .2s;
+    outline: none;
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--green-bright);
+    background: rgba(58,170,107,0.08);
+  }
+  .form-group select option { background: var(--green-dark); color: var(--white); }
+  .form-group textarea { resize: vertical; min-height: 110px; }
+  .form-submit {
+    width: 100%; padding: 16px;
+    background: linear-gradient(135deg, var(--green-bright), var(--green-mid));
+    border: none; border-radius: 8px;
+    color: var(--white); font-size: 15px; font-weight: 700;
+    cursor: pointer; font-family: 'Inter', sans-serif;
+    transition: transform .15s, box-shadow .15s;
+    box-shadow: 0 4px 20px rgba(58,170,107,0.35);
+  }
+  .form-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(58,170,107,0.5); }
+  .form-note { font-size: 12px; color: rgba(255,255,255,0.35); text-align: center; margin-top: 14px; }
+
+  /* ─── SUCCESS MESSAGE ─── */
+  .form-success {
+    display: none; text-align: center; padding: 32px;
+    background: rgba(58,170,107,0.1); border: 1px solid rgba(58,170,107,0.3);
+    border-radius: 12px; color: var(--green-light); font-size: 16px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #050f09; color: rgba(255,255,255,0.45);
+    padding: 40px; text-align: center;
+    font-size: 13px; line-height: 1.8;
+  }
+  footer a { color: var(--green-light); text-decoration: none; }
+  .footer-logo { height: 36px; margin-bottom: 20px; filter: brightness(0) invert(1) opacity(0.6); }
+  .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 16px 0; }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    section { padding: 64px 20px; }
+    .events-grid, .tech-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; }
+    .rooms-grid { grid-template-columns: 1fr; }
+    .room-card.featured { grid-column: span 1; }
+    .sustain-stats { grid-template-columns: 1fr 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .form-card { padding: 28px 20px; }
+    .contact-grid { gap: 48px; }
+    .hero-content { padding: 100px 20px 60px; }
+    .event-card { padding: 24px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <img class="nav-logo" src="https://lh3.googleusercontent.com/d/1273ssWhB1tcfdLhYz9b0NzugS8JcL1zH" alt="Belconti Resort Hotel" onerror="this.onerror=null;this.src='';this.alt='BELCONTI';this.style.cssText='font-size:18px;font-weight:800;color:#1a4a2e;font-family:sans-serif;'">
+  <ul class="nav-links">
+    <li><a href="#etkinlikler">Etkinlikler</a></li>
+    <li><a href="#toplanti">Toplantı Alanları</a></li>
+    <li><a href="#surdurulebilirlik">Sürdürülebilirlik</a></li>
+    <li><a href="#paketler">Paketler</a></li>
+    <li><a href="#basvuru">İletişim</a></li>
+  </ul>
+  <a class="nav-cta" href="https://belconti-resort-hotel.hotelrunner.com/bv3/search?locale=tr" target="_blank">Rezervasyon Yap →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badges">
+      <span class="badge badge-cop"><span class="badge-dot"></span>COP31 · Kasım 2026</span>
+      <span class="badge badge-iac"><span class="badge-dot"></span>IAC 2026 · Ekim 2026</span>
+    </div>
+    <img class="hero-logo" src="https://lh3.googleusercontent.com/d/1273ssWhB1tcfdLhYz9b0NzugS8JcL1zH" alt="Belconti Resort Hotel" onerror="this.onerror=null;this.style.display='none'">
+    <h1 class="hero-title">
+      Bilimden İklime,<br>
+      <span>Belek'in Küresel Üssü</span>
+    </h1>
+    <p class="hero-subtitle">
+      <strong>Ekim'de uzay,</strong> Kasım'da iklim — Belconti Resort Hotel, IAC 2026 ve COP31 sürecinde<br>
+      kongre delegasyonları, medya ekipleri ve kurumsal misafirler için Belek'in stratejik MICE merkezidir.
+    </p>
+    <div class="event-logos">
+      <div class="event-logo-item">
+        <img src="data:image/png;base64,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" alt="IAC 2026 Antalya">
+      </div>
+      <div class="event-logo-divider"></div>
+      <div class="event-logo-item">
+        <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNzkgODEiPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAzMC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuMSBCdWlsZCAxMzYpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogIzFiNzViYjsKICAgICAgfQoKICAgICAgLnN0MSB7CiAgICAgICAgZmlsbDogIzQyYjg3ZDsKICAgICAgfQoKICAgICAgLnN0MiB7CiAgICAgICAgZmlsbDogIzEyNGRhMTsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgZmlsbDogI2VjMjAyNDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTU4LjMsNzIuOWMuMi0uMi41LS40LjctLjctNS43LDIuNS0xMi4zLDUuNC0xOC4yLDguOCw2LjItMSwxMi4zLTMuNywxNy40LTguMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMjEuOCwyMmM2LjIsNC4xLDEwLjUsNi4zLDE4LDYuMywyLjIsMCwyLjktMy42LDcuOC0xMC41LDIuMi0zLTMuNy01LjgtNS40LTYuMS4yLDMuMiwyLDcuMi44LDkuMy0xLjYsMi45LTkuMiwyLjctMTMsMS4zLDkuOSwxLjMsOC40LTQuNyw5LjctMTAuOS0yLjMtLjMtNC43LS40LTcuMS0uMnMtMi45LjUtNC4yLDEuMS0xLjEuNS0xLjguNmMwLDAtLjEsMC0uMiwwLTEuNywwLTMuNC4zLTUsMXMtMy4xLDEuNC00LjUsMi4zYy45LDIuMiwyLjQsNC4xLDQuOCw1LjdaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTM1LjMsMzcuMWMxLjMsMS41LDEuMSwzLjQuOCw1LjRzLjIsMy44LDEuMiw1LjRoMGMuNS43LDEuMSwxLjQsMS44LDEuOSwxLjMuOSwyLjcsMS44LDMuNiwyLjcuNC40LjguOSwxLjEsMS4zLDAsMCwwLDAsMCwwLDEuMS0zLC4zLTYuMy0yLjItOC40cy0uNy0uNy0xLTFjLTEuOS0yLjUtMi4yLTQuNS0yLjItNi4zcy4zLTMuMy45LTQuOGwuOC0yLjFjLjMtLjgtLjMtMS42LTEuMS0xLjUtMy45LjItNi41LS41LTkuNy0xLjgtNC44LTEuOS0xMS4yLTUuNy0xNC4xLTEwLjQtMSwuNy0yLDEuNS0zLDIuMy0uMy4zLS42LjYtLjkuOCw0LjIsNC45LDYuNywxLjIsMTYuNSwxMy4yLDMuMSwzLjgsNS42LDEuNCw3LjMsMy40WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zOC42LDUxLjJjMCwuNSwxLjIsNC44LDEuMyw1LjIuNCwxLjYuNywzLjIuOCw0LjYuMS0uMy45LTIsMS42LTMuNnMwLTQuMS0xLjktNS0xLjUtLjgtMS44LTEuM1oiLz4KICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNjkuOSwzOS43Yy0uOSw2LjctNC41LDE2LjMtOC4zLDE4LjQtMi41LDEuNC01LjMsMi4xLTguMiwyLjQtNSwuNS05LjQsMy4yLTEyLjEsNy40LTEuNywyLjctMy42LDUuMi01LjMsNi42LDEuNS4zLDQuNS0xLjUsNi40LTEuOC0xLjcsMS42LTQuNSwzLjctNy4xLDQtMiwuMi00LC44LTYsMS40LTIuMS43LTQuNCwxLjMtNS44LDEuMSwwLDAsMCwwLDAsLjEsMCwwLC4xLDAsLjIsMCw2LjgsMi40LDE0LjMsMS42LDIwLjYtMS45LDMuMy0xLjgsNi42LTMuNSw5LjgtNSwuNC0uMi45LS40LDEuMy0uNiw2LjItMi44LDExLjEtOCwxMy4zLTE0LjUsMS45LTUuNywyLjMtMTEuOCwxLjItMTcuN1oiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNTkuNywyMC45YzMuNywyMS4zLS45LDI1LjUtNS4zLDI3LjUtMywxLjQtNS41LDMuNS02LjYsNi43LDAsLjEsMCwuMi0uMS40LS42LDEuOC43LDMuNiwyLjYsMy42aDBjLjMsMCwuNiwwLC45LDAsNi43LS4zLDEyLjUtNC45LDE0LjYtMTEuMi4yLS41LjQtMS4xLjUtMS42LDIuNi03LjgsMS4xLTE2LjUtNC4zLTIyLjdzMCwwLS4xLS4xYy0uNy0uOC0xLjUtMS42LTIuMy0yLjRaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTMxLjgsNTYuNWMwLS45LS4zLTEuOC0uOS0yLjQtMi4zLTIuMy02LjMtMy01LjctNi45LjItMS40LDIuMi0zLjIsMi01LjEtLjItMS43LTQuNS04LjUtNS44LTMtLjUsMi4xLTEuMywzLjYtMy44LDUuOC0yLjQsMi4xLTQuMywxLjQtNC4zLDMsMCwxLjYsNy40LDEuOSw4LjQsMy4yLjMuNC44LDEuOS43LDIuNi0zLjctNS41LTcuNS0yLjctNS45LS44LjIuMy42LDAsLjYtLjMsMC0uMiwwLS4zLDAtLjUsMC0uMy4zLS41LjUtLjQuMSwwLC4zLjIuNC40LjksMS4yLDUuMSw0LjIsNiw2LjEuOSwxLjksNi45LDMuNiw4LjMsNC0uMy0yLjEtLjQtNC0uMy01LjdaIi8+CiAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTMyLjYsNjUuNGMtLjItMS4xLS40LTIuMS0uNi0zLjEtNC4xLDEtOS45LTMuNS0xMS4yLTUuMS0yLjMtMi43LTguOC00LjYtOS40LTguOS0uMS0xLC4yLTIuNSwxLjQtMy4zLDIuMy0xLjcsNC42LTEuOSw4LjItOC43LDIuNC00LjcsNy44LDIuMSw3LjUsNS4zLjIsMi41LTMsNS41LTEuNSw4LC44LDEuMywyLjIsMi40LDMuNywzLjQuNS40LDEuMywwLDEuNC0uNi4xLS43LjUtMS4zLjMtMS44LTMuMy05LjgsMi4yLTcuMS0uMS0xMi0uOC0xLjYtMy42LTItNS0zLjEtMi41LTItNC4xLTQuOC02LjUtNi43LTMuMS0yLjMtNy40LTQtOS44LTYuOC0uMi0uMi0uMy0uNC0uNS0uNi0uNC40LS43LjctMS4xLDEuMS0xLjEsMS4yLTEuMSwzLjEuMiw0LjMuNC4zLjcuNywxLjEsMS4xLS42LS4yLTEuMS0uNC0xLjYtLjctMS40LS43LTMuMS0uMi00LDEuMi0xLjEsMS44LTEuOSwzLjYtMi42LDUuNSwzLjIsMCw2LjUsMCw5LjMuOSw5LjIsMy4yLTUuOSwxMi4xLTUuOSwxNS43LDAsMyw1LjcsNC40LDguNCw2LjMsNCwyLjcsMy4yLDEwLjMsMi44LDEyLjktLjEuNywwLDEuNC4zLDIsMCwuMS4xLjIuMy4zLDEuOSwyLjIsNS41LDEuNiw2LjgtMSwuNC0uNy44LTEuNCwxLjItMS45LS4xLDEuMS0uMywyLjMtLjUsMy40LS4zLDEuOCwxLjUsMy4yLDMuMSwyLjRoMGMuNC0uMi44LS40LDEuMi0uNiwyLjEtMS40LDQuNC00LDMuMy04LjhaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTEzLjQsNjAuN2MtMi4xLTMuOS0xOC4yLTUuMS0xMC40LTEyLjYsMi41LTIuNCw3LjYtNS4xLDcuNy03LjguMS0yLjgtNC40LTMuNy05LjEtMy42LTMuMSwxMS0uOCwyMy4zLDcuMiwzMi41LDAsMCwwLDAsMCwwLDEuNSwxLjcsNC4zLDEsNC44LTEuMy42LTIuNi45LTUuMi0uMi03LjNaIi8+CiAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTM5LjEsNjYuMmMuNi0yLjUuNi01LjYtLjQtOS41LS44LTMuMy4yLTcuMS02LjItMTIuMywwLDAsMi4xLDIuNSwxLjYsNC42LS41LDIuMS0yLDgtLjIsMTYuMSwxLjMsNS44LTEuOSw4LjktMy45LDEwLjEtLjQuMi0uOS41LTEuMy43LTIuNCwxLjEtNi40LDEuNC04LjkuMi0yLjQtMS4yLTQuNy0yLjctNS40LTUuMy41LDIuOCwyLjYsNC42LDUsNi4xLDQsMi40LDEwLjIuOCwxMy43LTEuOCwxMS43LTguMSwxNi44LTI4LjYsMTguMi00Mi0yLjQsOS4zLTUuOCwyMy4zLTEyLjMsMzMuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNDYuMSwxMS44czYsMi4yLDEuNSw4LjhjLTMuOSw1LjctMTAuNiwyMS4yLTEuMywyNS44LDcuMiwzLjYsMTEuNC0zLjgsMTIuNS04LjksMS40LTYuMi0xLjItMTcuOC40LTIxLjksMS4yLTMsNC4yLTIuMiw0LjItMi4yLDAsMC02LjctMy43LTYuOCwxMS41LS4xLDE0LjMtNS42LDE3LjItNi40LDE4LjMsMCwwLDQuOS02LjIsNS4zLTE5LjUuMi03LjktLjctMTIuOS03LjUtMTQuOSwwLDAsOC41LDQuMSwyLjcsMTUuNHMtNC4yLDEzLjUtMy43LDE4LjFjMCwwLTMuNS00LjEsMC0xMi40LDMuNC04LjMsOC40LTE2LjgtLjktMTguMloiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNzUuNyw0Ni41djMuN2g1LjF2MTMuM2g0LjZ2LTEzLjNoNS4xdi0zLjdoLTE0LjhaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTkyLjMsNDYuNXYzLjZoNC42di0zLjZoLTQuNlpNMTAyLjQsNDYuNXYzLjZoNC42di0zLjZoLTQuNlpNMTAyLjQsNTEuNHY1LjZjMCwuNS0uMSwxLS40LDEuNC0uMi40LS42LjctMSwxLS40LjItLjkuNC0xLjQuNHMtMS0uMS0xLjQtLjRjLS40LS4yLS43LS42LTEtMS0uMi0uNC0uNC0uOS0uNC0xLjR2LTUuNmgtNC42djZjMCwxLjMuMywyLjQuOSwzLjQuNi45LDEuNSwxLjcsMi42LDIuMiwxLjEuNSwyLjQuOCwzLjkuOHMyLjctLjMsMy45LS44YzEuMS0uNSwyLTEuMiwyLjYtMi4yLjYtLjkuOS0yLjEuOS0zLjR2LTZoLTQuNloiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTIwLDU3LjJjLjktLjQsMS42LTEsMi4xLTEuOC41LS44LjgtMS45LjgtMy4xcy0uMy0yLjMtLjgtMy4xYy0uNS0uOS0xLjMtMS41LTIuMi0yLTEtLjUtMi4xLS43LTMuMy0uN2gtNy40djE3LjFoNC42di01LjZoMS42bDMsNS42aDVsLTMuNS02LjRaTTExNy44LDUzLjVjLS4yLjMtLjUuNS0uOS43LS40LjEtLjkuMi0xLjQuMmgtMS42di00LjFoMS42Yy41LDAsMSwwLDEuNC4yLjQuMS43LjQuOS43LjIuMy4zLjcuMywxLjJzLS4xLjktLjMsMS4yWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMzQuNSw1NC4xbDIuNC0zLjEuOS0xLjIsMi41LTMuM2gtNS40bC01LjEsNi45aC0uMnYtNi45aC00LjZ2MTcuMWg0LjZ2LTQuNGwxLjUtMiwzLjgsNi40aDUuNWwtNS45LTkuNVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTQxLjcsNTEuNHYxMi4yaDQuNnYtMTIuMmgtNC42Wk0xNDEuNyw0Ni41djMuN2g0LjZ2LTMuN2gtNC42WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTkuOCw0Ni41bC0zLjMsNi45aC0uMWwtMy4zLTYuOWgtNS4ybDYuMywxMS43djUuNGg0LjZ2LTUuNGw2LjMtMTEuN2gtNS4yWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNzguOCw1MC4ydi0zLjdoLTEyLjN2MTcuMWgxMi4zdi0zLjdoLTcuNnYtMi45aDd2LTMuN2gtN3YtMi45aDcuN1oiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05OS44LDMyLjhjLS4zLDEuMy0uOSwyLjYtMS42LDMuNi0uNywxLjEtMS42LDItMi42LDIuNy0xLC43LTIuMSwxLjMtMy40LDEuNy0xLjIuNC0yLjYuNi00LC42cy0zLjUtLjMtNS0uOWMtMS41LS42LTIuOS0xLjUtNC0yLjYtMS4xLTEuMS0yLTIuNC0yLjYtNC0uNi0xLjUtLjktMy4yLS45LTVzLjMtMy41LjktNS4xYy42LTEuNSwxLjUtMi45LDIuNi00czIuNC0yLDQtMi42YzEuNS0uNiwzLjItLjksNS0uOXMyLjcuMiwzLjkuNmMxLjIuNCwyLjMuOSwzLjMsMS42LDEsLjcsMS45LDEuNiwyLjYsMi42LjcsMSwxLjMsMi4xLDEuNiwzLjRoLTIuNWMtLjctMS45LTEuOS0zLjMtMy40LTQuNC0xLjYtMS4xLTMuNC0xLjYtNS42LTEuNnMtMi44LjMtNCwuOGMtMS4yLjUtMi4zLDEuMi0zLjIsMi4xLS45LjktMS42LDItMi4xLDMuMy0uNSwxLjMtLjgsMi42LS44LDQuMXMuMywyLjkuOCw0LjFjLjUsMS4zLDEuMiwyLjMsMi4xLDMuMy45LjksMiwxLjYsMy4yLDIuMSwxLjIuNSwyLjYuOCw0LC44LDIuMiwwLDQuMS0uNiw1LjctMS43LDEuNi0xLjEsMi44LTIuNywzLjUtNC43aDIuNFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDkuMiw0MC41Yy0xLjUtLjYtMi45LTEuNS00LTIuNi0xLjEtMS4xLTItMi40LTIuNi0zLjktLjYtMS41LS45LTMuMi0uOS01LjFzLjMtMy41LjktNS4xYy42LTEuNSwxLjUtMi45LDIuNi00czIuNC0yLDQtMi42YzEuNS0uNiwzLjItLjksNS4xLS45czMuNS4zLDUuMS45YzEuNS42LDIuOSwxLjUsNCwyLjYsMS4xLDEuMSwyLDIuNCwyLjYsNCwuNiwxLjUuOSwzLjIuOSw1LjFzLS4zLDMuNS0uOSw1LjFjLS42LDEuNS0xLjUsMi45LTIuNiwzLjktMS4xLDEuMS0yLjQsMS45LTQsMi42LTEuNS42LTMuMi45LTUuMS45cy0zLjUtLjMtNS4xLS45Wk0xMTguNCwzOC40YzEuMi0uNSwyLjMtMS4yLDMuMi0yLjFzMS42LTIsMi4xLTMuM2MuNS0xLjMuOC0yLjcuOC00LjJzLS4zLTIuOS0uOC00LjJjLS41LTEuMy0xLjItMi40LTIuMS0zLjMtLjktLjktMi0xLjYtMy4yLTIuMS0xLjItLjUtMi42LS44LTQuMS0uOHMtMi44LjMtNC4xLjhjLTEuMi41LTIuMywxLjItMy4yLDIuMS0uOS45LTEuNiwyLTIuMSwzLjMtLjUsMS4zLS43LDIuNy0uNyw0LjJzLjIsMi45LjcsNC4yYy41LDEuMywxLjIsMi40LDIuMSwzLjMuOS45LDIsMS42LDMuMiwyLjEsMS4yLjUsMi42LjgsNC4xLjhzMi45LS4zLDQuMS0uOFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjkuNSwxNi41aDEwLjVjMS4yLDAsMi4yLjIsMy4yLjYsMSwuNCwxLjguOSwyLjUsMS42LjcuNywxLjMsMS41LDEuNiwyLjQuNC45LjYsMiwuNiwzLjFzLS4yLDIuMS0uNiwzLjFjLS40LjktLjksMS44LTEuNiwyLjQtLjcuNy0xLjUsMS4yLTIuNSwxLjYtMSwuNC0yLjEuNi0zLjIuNmgtOC43di0yLjFoOC41YzEuOCwwLDMuMy0uNSw0LjMtMS42LDEtMSwxLjUtMi40LDEuNS00cy0uNS0zLTEuNS00LjFjLTEtMS0yLjQtMS42LTQuMy0xLjZoLTguM2wuNC0uNHYyMy4xaC0yLjR2LTI0LjhaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTE1Mi41LDM0Yy4xLDEuNS43LDIuOCwxLjgsMy43LDEuMS45LDIuNCwxLjQsNC4xLDEuNHMzLjItLjUsNC4zLTEuNWMxLjEtMSwxLjctMi4zLDEuNy00cy0uMS0xLjYtLjQtMi4yYy0uMy0uNy0uNy0xLjItMS4yLTEuNy0uNS0uNS0xLjItLjgtMS45LTEuMS0uNy0uMi0xLjUtLjQtMi40LS40aC0zLjd2LTEuNmw3LjctOC40di4zYy4xLDAtMTEuOCwwLTExLjgsMHYtMi4yaDE1djEuN2wtNy44LDguNC0uMi0uNGgxLjFjMS4yLDAsMi4zLjIsMy4zLjYsMSwuNCwxLjguOSwyLjUsMS41LjcuNywxLjMsMS41LDEuNywyLjQuNC45LjYsMiwuNiwzLjFzLS4yLDIuMi0uNiwzLjJjLS40LjktMSwxLjctMS43LDIuNC0uOC43LTEuNiwxLjItMi43LDEuNS0xLC40LTIuMS41LTMuMy41cy0yLjItLjItMy4yLS41Yy0xLS4zLTEuOC0uOC0yLjUtMS41LS43LS42LTEuMy0xLjQtMS43LTIuMy0uNC0uOS0uNy0xLjktLjgtM2gyLjRaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTc2LjEsMTlsLjQuMi03LjIsNC41di0yLjdsNy41LTQuN2gxLjh2MjVoLTIuNHYtMjIuM1oiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTc4LjgsNjguNGgxLjVsMi45LDcuMWgtMS40bC0uNi0xLjZoLjJjMCwuMS0zLjYuMS0zLjYuMWguMmMwLS4xLS42LDEuNS0uNiwxLjVoLTEuNGwyLjktNy4xWk03OCw3Mi45aDIuOSwwYzAsLjEtMS40LTMuMy0xLjQtMy4zaC4xbC0xLjQsMy40aDBaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTkzLjQsNjguNGgxLjJsNC4xLDUuMmgwczAtNS4yLDAtNS4yaDEuM3Y3LjFoLTEuMmwtNC4yLTUuMWgwczAsNS4xLDAsNS4xaC0xLjN2LTcuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTEwLjQsNjguNGg1Ljl2MS4yaC01Ljl2LTEuMlpNMTEyLjcsNjkuNGgxLjN2Ni4xaC0xLjN2LTYuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTI4LDY4LjRoMS41bDIuOSw3LjFoLTEuNGwtLjYtMS42aC4yYzAsLjEtMy42LjEtMy42LjFoLjJjMC0uMS0uNiwxLjUtLjYsMS41aC0xLjRsMi45LTcuMVpNMTI3LjIsNzIuOWgyLjksMGMwLC4xLTEuNC0zLjMtMS40LTMuM2guMWwtMS40LDMuNGgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNDIuNiw2OC40aDEuM3Y2LjFoLS4xYzAtLjEsMy45LS4xLDMuOS0uMXYxLjFoLTUuMXYtNy4xWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTYuMiw2OC40aDEuNWwxLjksMy4yaC0uMWwxLjktMy4yaDEuNWwtMy4zLDUuNC0zLjMtNS40Wk0xNTguOSw3Mi42aDEuM3YyLjloLTEuM3YtMi45WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNzQuNCw2OC40aDEuNWwyLjksNy4xaC0xLjRsLS42LTEuNmguMmMwLC4xLTMuNi4xLTMuNi4xaC4yYzAtLjEtLjYsMS41LS42LDEuNWgtMS40bDIuOS03LjFaTTE3My43LDcyLjloMi45LDBjMCwuMS0xLjQtMy4zLTEuNC0zLjNoLjFsLTEuNCwzLjRoMFoiLz4KPC9zdmc+" alt="COP31 Türkiye Antalya">
+      </div>
+    </div>
+    <div class="hero-buttons">
+      <a href="#basvuru" class="btn-primary">🗓 Toplantı Talebi Gönder</a>
+      <a href="https://belconti-resort-hotel.hotelrunner.com/bv3/search?locale=tr" target="_blank" class="btn-secondary">Rezervasyon Yap</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Keşfet</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- EVENT STRIP -->
+<div class="event-strip" id="etkinlikler">
+  <div class="event-card cop">
+    <div class="event-card-inner">
+      <div class="event-card-logo">
+        <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNzkgODEiPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAzMC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuMSBCdWlsZCAxMzYpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogIzFiNzViYjsKICAgICAgfQoKICAgICAgLnN0MSB7CiAgICAgICAgZmlsbDogIzQyYjg3ZDsKICAgICAgfQoKICAgICAgLnN0MiB7CiAgICAgICAgZmlsbDogIzEyNGRhMTsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgZmlsbDogI2VjMjAyNDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTU4LjMsNzIuOWMuMi0uMi41LS40LjctLjctNS43LDIuNS0xMi4zLDUuNC0xOC4yLDguOCw2LjItMSwxMi4zLTMuNywxNy40LTguMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMjEuOCwyMmM2LjIsNC4xLDEwLjUsNi4zLDE4LDYuMywyLjIsMCwyLjktMy42LDcuOC0xMC41LDIuMi0zLTMuNy01LjgtNS40LTYuMS4yLDMuMiwyLDcuMi44LDkuMy0xLjYsMi45LTkuMiwyLjctMTMsMS4zLDkuOSwxLjMsOC40LTQuNyw5LjctMTAuOS0yLjMtLjMtNC43LS40LTcuMS0uMnMtMi45LjUtNC4yLDEuMS0xLjEuNS0xLjguNmMwLDAtLjEsMC0uMiwwLTEuNywwLTMuNC4zLTUsMXMtMy4xLDEuNC00LjUsMi4zYy45LDIuMiwyLjQsNC4xLDQuOCw1LjdaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTM1LjMsMzcuMWMxLjMsMS41LDEuMSwzLjQuOCw1LjRzLjIsMy44LDEuMiw1LjRoMGMuNS43LDEuMSwxLjQsMS44LDEuOSwxLjMuOSwyLjcsMS44LDMuNiwyLjcuNC40LjguOSwxLjEsMS4zLDAsMCwwLDAsMCwwLDEuMS0zLC4zLTYuMy0yLjItOC40cy0uNy0uNy0xLTFjLTEuOS0yLjUtMi4yLTQuNS0yLjItNi4zcy4zLTMuMy45LTQuOGwuOC0yLjFjLjMtLjgtLjMtMS42LTEuMS0xLjUtMy45LjItNi41LS41LTkuNy0xLjgtNC44LTEuOS0xMS4yLTUuNy0xNC4xLTEwLjQtMSwuNy0yLDEuNS0zLDIuMy0uMy4zLS42LjYtLjkuOCw0LjIsNC45LDYuNywxLjIsMTYuNSwxMy4yLDMuMSwzLjgsNS42LDEuNCw3LjMsMy40WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zOC42LDUxLjJjMCwuNSwxLjIsNC44LDEuMyw1LjIuNCwxLjYuNywzLjIuOCw0LjYuMS0uMy45LTIsMS42LTMuNnMwLTQuMS0xLjktNS0xLjUtLjgtMS44LTEuM1oiLz4KICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNjkuOSwzOS43Yy0uOSw2LjctNC41LDE2LjMtOC4zLDE4LjQtMi41LDEuNC01LjMsMi4xLTguMiwyLjQtNSwuNS05LjQsMy4yLTEyLjEsNy40LTEuNywyLjctMy42LDUuMi01LjMsNi42LDEuNS4zLDQuNS0xLjUsNi40LTEuOC0xLjcsMS42LTQuNSwzLjctNy4xLDQtMiwuMi00LC44LTYsMS40LTIuMS43LTQuNCwxLjMtNS44LDEuMSwwLDAsMCwwLDAsLjEsMCwwLC4xLDAsLjIsMCw2LjgsMi40LDE0LjMsMS42LDIwLjYtMS45LDMuMy0xLjgsNi42LTMuNSw5LjgtNSwuNC0uMi45LS40LDEuMy0uNiw2LjItMi44LDExLjEtOCwxMy4zLTE0LjUsMS45LTUuNywyLjMtMTEuOCwxLjItMTcuN1oiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNTkuNywyMC45YzMuNywyMS4zLS45LDI1LjUtNS4zLDI3LjUtMywxLjQtNS41LDMuNS02LjYsNi43LDAsLjEsMCwuMi0uMS40LS42LDEuOC43LDMuNiwyLjYsMy42aDBjLjMsMCwuNiwwLC45LDAsNi43LS4zLDEyLjUtNC45LDE0LjYtMTEuMi4yLS41LjQtMS4xLjUtMS42LDIuNi03LjgsMS4xLTE2LjUtNC4zLTIyLjdzMCwwLS4xLS4xYy0uNy0uOC0xLjUtMS42LTIuMy0yLjRaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTMxLjgsNTYuNWMwLS45LS4zLTEuOC0uOS0yLjQtMi4zLTIuMy02LjMtMy01LjctNi45LjItMS40LDIuMi0zLjIsMi01LjEtLjItMS43LTQuNS04LjUtNS44LTMtLjUsMi4xLTEuMywzLjYtMy44LDUuOC0yLjQsMi4xLTQuMywxLjQtNC4zLDMsMCwxLjYsNy40LDEuOSw4LjQsMy4yLjMuNC44LDEuOS43LDIuNi0zLjctNS41LTcuNS0yLjctNS45LS44LjIuMy42LDAsLjYtLjMsMC0uMiwwLS4zLDAtLjUsMC0uMy4zLS41LjUtLjQuMSwwLC4zLjIuNC40LjksMS4yLDUuMSw0LjIsNiw2LjEuOSwxLjksNi45LDMuNiw4LjMsNC0uMy0yLjEtLjQtNC0uMy01LjdaIi8+CiAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTMyLjYsNjUuNGMtLjItMS4xLS40LTIuMS0uNi0zLjEtNC4xLDEtOS45LTMuNS0xMS4yLTUuMS0yLjMtMi43LTguOC00LjYtOS40LTguOS0uMS0xLC4yLTIuNSwxLjQtMy4zLDIuMy0xLjcsNC42LTEuOSw4LjItOC43LDIuNC00LjcsNy44LDIuMSw3LjUsNS4zLjIsMi41LTMsNS41LTEuNSw4LC44LDEuMywyLjIsMi40LDMuNywzLjQuNS40LDEuMywwLDEuNC0uNi4xLS43LjUtMS4zLjMtMS44LTMuMy05LjgsMi4yLTcuMS0uMS0xMi0uOC0xLjYtMy42LTItNS0zLjEtMi41LTItNC4xLTQuOC02LjUtNi43LTMuMS0yLjMtNy40LTQtOS44LTYuOC0uMi0uMi0uMy0uNC0uNS0uNi0uNC40LS43LjctMS4xLDEuMS0xLjEsMS4yLTEuMSwzLjEuMiw0LjMuNC4zLjcuNywxLjEsMS4xLS42LS4yLTEuMS0uNC0xLjYtLjctMS40LS43LTMuMS0uMi00LDEuMi0xLjEsMS44LTEuOSwzLjYtMi42LDUuNSwzLjIsMCw2LjUsMCw5LjMuOSw5LjIsMy4yLTUuOSwxMi4xLTUuOSwxNS43LDAsMyw1LjcsNC40LDguNCw2LjMsNCwyLjcsMy4yLDEwLjMsMi44LDEyLjktLjEuNywwLDEuNC4zLDIsMCwuMS4xLjIuMy4zLDEuOSwyLjIsNS41LDEuNiw2LjgtMSwuNC0uNy44LTEuNCwxLjItMS45LS4xLDEuMS0uMywyLjMtLjUsMy40LS4zLDEuOCwxLjUsMy4yLDMuMSwyLjRoMGMuNC0uMi44LS40LDEuMi0uNiwyLjEtMS40LDQuNC00LDMuMy04LjhaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTEzLjQsNjAuN2MtMi4xLTMuOS0xOC4yLTUuMS0xMC40LTEyLjYsMi41LTIuNCw3LjYtNS4xLDcuNy03LjguMS0yLjgtNC40LTMuNy05LjEtMy42LTMuMSwxMS0uOCwyMy4zLDcuMiwzMi41LDAsMCwwLDAsMCwwLDEuNSwxLjcsNC4zLDEsNC44LTEuMy42LTIuNi45LTUuMi0uMi03LjNaIi8+CiAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTM5LjEsNjYuMmMuNi0yLjUuNi01LjYtLjQtOS41LS44LTMuMy4yLTcuMS02LjItMTIuMywwLDAsMi4xLDIuNSwxLjYsNC42LS41LDIuMS0yLDgtLjIsMTYuMSwxLjMsNS44LTEuOSw4LjktMy45LDEwLjEtLjQuMi0uOS41LTEuMy43LTIuNCwxLjEtNi40LDEuNC04LjkuMi0yLjQtMS4yLTQuNy0yLjctNS40LTUuMy41LDIuOCwyLjYsNC42LDUsNi4xLDQsMi40LDEwLjIuOCwxMy43LTEuOCwxMS43LTguMSwxNi44LTI4LjYsMTguMi00Mi0yLjQsOS4zLTUuOCwyMy4zLTEyLjMsMzMuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNDYuMSwxMS44czYsMi4yLDEuNSw4LjhjLTMuOSw1LjctMTAuNiwyMS4yLTEuMywyNS44LDcuMiwzLjYsMTEuNC0zLjgsMTIuNS04LjksMS40LTYuMi0xLjItMTcuOC40LTIxLjksMS4yLTMsNC4yLTIuMiw0LjItMi4yLDAsMC02LjctMy43LTYuOCwxMS41LS4xLDE0LjMtNS42LDE3LjItNi40LDE4LjMsMCwwLDQuOS02LjIsNS4zLTE5LjUuMi03LjktLjctMTIuOS03LjUtMTQuOSwwLDAsOC41LDQuMSwyLjcsMTUuNHMtNC4yLDEzLjUtMy43LDE4LjFjMCwwLTMuNS00LjEsMC0xMi40LDMuNC04LjMsOC40LTE2LjgtLjktMTguMloiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNzUuNyw0Ni41djMuN2g1LjF2MTMuM2g0LjZ2LTEzLjNoNS4xdi0zLjdoLTE0LjhaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTkyLjMsNDYuNXYzLjZoNC42di0zLjZoLTQuNlpNMTAyLjQsNDYuNXYzLjZoNC42di0zLjZoLTQuNlpNMTAyLjQsNTEuNHY1LjZjMCwuNS0uMSwxLS40LDEuNC0uMi40LS42LjctMSwxLS40LjItLjkuNC0xLjQuNHMtMS0uMS0xLjQtLjRjLS40LS4yLS43LS42LTEtMS0uMi0uNC0uNC0uOS0uNC0xLjR2LTUuNmgtNC42djZjMCwxLjMuMywyLjQuOSwzLjQuNi45LDEuNSwxLjcsMi42LDIuMiwxLjEuNSwyLjQuOCwzLjkuOHMyLjctLjMsMy45LS44YzEuMS0uNSwyLTEuMiwyLjYtMi4yLjYtLjkuOS0yLjEuOS0zLjR2LTZoLTQuNloiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTIwLDU3LjJjLjktLjQsMS42LTEsMi4xLTEuOC41LS44LjgtMS45LjgtMy4xcy0uMy0yLjMtLjgtMy4xYy0uNS0uOS0xLjMtMS41LTIuMi0yLTEtLjUtMi4xLS43LTMuMy0uN2gtNy40djE3LjFoNC42di01LjZoMS42bDMsNS42aDVsLTMuNS02LjRaTTExNy44LDUzLjVjLS4yLjMtLjUuNS0uOS43LS40LjEtLjkuMi0xLjQuMmgtMS42di00LjFoMS42Yy41LDAsMSwwLDEuNC4yLjQuMS43LjQuOS43LjIuMy4zLjcuMywxLjJzLS4xLjktLjMsMS4yWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMzQuNSw1NC4xbDIuNC0zLjEuOS0xLjIsMi41LTMuM2gtNS40bC01LjEsNi45aC0uMnYtNi45aC00LjZ2MTcuMWg0LjZ2LTQuNGwxLjUtMiwzLjgsNi40aDUuNWwtNS45LTkuNVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTQxLjcsNTEuNHYxMi4yaDQuNnYtMTIuMmgtNC42Wk0xNDEuNyw0Ni41djMuN2g0LjZ2LTMuN2gtNC42WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTkuOCw0Ni41bC0zLjMsNi45aC0uMWwtMy4zLTYuOWgtNS4ybDYuMywxMS43djUuNGg0LjZ2LTUuNGw2LjMtMTEuN2gtNS4yWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNzguOCw1MC4ydi0zLjdoLTEyLjN2MTcuMWgxMi4zdi0zLjdoLTcuNnYtMi45aDd2LTMuN2gtN3YtMi45aDcuN1oiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05OS44LDMyLjhjLS4zLDEuMy0uOSwyLjYtMS42LDMuNi0uNywxLjEtMS42LDItMi42LDIuNy0xLC43LTIuMSwxLjMtMy40LDEuNy0xLjIuNC0yLjYuNi00LC42cy0zLjUtLjMtNS0uOWMtMS41LS42LTIuOS0xLjUtNC0yLjYtMS4xLTEuMS0yLTIuNC0yLjYtNC0uNi0xLjUtLjktMy4yLS45LTVzLjMtMy41LjktNS4xYy42LTEuNSwxLjUtMi45LDIuNi00czIuNC0yLDQtMi42YzEuNS0uNiwzLjItLjksNS0uOXMyLjcuMiwzLjkuNmMxLjIuNCwyLjMuOSwzLjMsMS42LDEsLjcsMS45LDEuNiwyLjYsMi42LjcsMSwxLjMsMi4xLDEuNiwzLjRoLTIuNWMtLjctMS45LTEuOS0zLjMtMy40LTQuNC0xLjYtMS4xLTMuNC0xLjYtNS42LTEuNnMtMi44LjMtNCwuOGMtMS4yLjUtMi4zLDEuMi0zLjIsMi4xLS45LjktMS42LDItMi4xLDMuMy0uNSwxLjMtLjgsMi42LS44LDQuMXMuMywyLjkuOCw0LjFjLjUsMS4zLDEuMiwyLjMsMi4xLDMuMy45LjksMiwxLjYsMy4yLDIuMSwxLjIuNSwyLjYuOCw0LC44LDIuMiwwLDQuMS0uNiw1LjctMS43LDEuNi0xLjEsMi44LTIuNywzLjUtNC43aDIuNFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDkuMiw0MC41Yy0xLjUtLjYtMi45LTEuNS00LTIuNi0xLjEtMS4xLTItMi40LTIuNi0zLjktLjYtMS41LS45LTMuMi0uOS01LjFzLjMtMy41LjktNS4xYy42LTEuNSwxLjUtMi45LDIuNi00czIuNC0yLDQtMi42YzEuNS0uNiwzLjItLjksNS4xLS45czMuNS4zLDUuMS45YzEuNS42LDIuOSwxLjUsNCwyLjYsMS4xLDEuMSwyLDIuNCwyLjYsNCwuNiwxLjUuOSwzLjIuOSw1LjFzLS4zLDMuNS0uOSw1LjFjLS42LDEuNS0xLjUsMi45LTIuNiwzLjktMS4xLDEuMS0yLjQsMS45LTQsMi42LTEuNS42LTMuMi45LTUuMS45cy0zLjUtLjMtNS4xLS45Wk0xMTguNCwzOC40YzEuMi0uNSwyLjMtMS4yLDMuMi0yLjFzMS42LTIsMi4xLTMuM2MuNS0xLjMuOC0yLjcuOC00LjJzLS4zLTIuOS0uOC00LjJjLS41LTEuMy0xLjItMi40LTIuMS0zLjMtLjktLjktMi0xLjYtMy4yLTIuMS0xLjItLjUtMi42LS44LTQuMS0uOHMtMi44LjMtNC4xLjhjLTEuMi41LTIuMywxLjItMy4yLDIuMS0uOS45LTEuNiwyLTIuMSwzLjMtLjUsMS4zLS43LDIuNy0uNyw0LjJzLjIsMi45LjcsNC4yYy41LDEuMywxLjIsMi40LDIuMSwzLjMuOS45LDIsMS42LDMuMiwyLjEsMS4yLjUsMi42LjgsNC4xLjhzMi45LS4zLDQuMS0uOFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjkuNSwxNi41aDEwLjVjMS4yLDAsMi4yLjIsMy4yLjYsMSwuNCwxLjguOSwyLjUsMS42LjcuNywxLjMsMS41LDEuNiwyLjQuNC45LjYsMiwuNiwzLjFzLS4yLDIuMS0uNiwzLjFjLS40LjktLjksMS44LTEuNiwyLjQtLjcuNy0xLjUsMS4yLTIuNSwxLjYtMSwuNC0yLjEuNi0zLjIuNmgtOC43di0yLjFoOC41YzEuOCwwLDMuMy0uNSw0LjMtMS42LDEtMSwxLjUtMi40LDEuNS00cy0uNS0zLTEuNS00LjFjLTEtMS0yLjQtMS42LTQuMy0xLjZoLTguM2wuNC0uNHYyMy4xaC0yLjR2LTI0LjhaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTE1Mi41LDM0Yy4xLDEuNS43LDIuOCwxLjgsMy43LDEuMS45LDIuNCwxLjQsNC4xLDEuNHMzLjItLjUsNC4zLTEuNWMxLjEtMSwxLjctMi4zLDEuNy00cy0uMS0xLjYtLjQtMi4yYy0uMy0uNy0uNy0xLjItMS4yLTEuNy0uNS0uNS0xLjItLjgtMS45LTEuMS0uNy0uMi0xLjUtLjQtMi40LS40aC0zLjd2LTEuNmw3LjctOC40di4zYy4xLDAtMTEuOCwwLTExLjgsMHYtMi4yaDE1djEuN2wtNy44LDguNC0uMi0uNGgxLjFjMS4yLDAsMi4zLjIsMy4zLjYsMSwuNCwxLjguOSwyLjUsMS41LjcuNywxLjMsMS41LDEuNywyLjQuNC45LjYsMiwuNiwzLjFzLS4yLDIuMi0uNiwzLjJjLS40LjktMSwxLjctMS43LDIuNC0uOC43LTEuNiwxLjItMi43LDEuNS0xLC40LTIuMS41LTMuMy41cy0yLjItLjItMy4yLS41Yy0xLS4zLTEuOC0uOC0yLjUtMS41LS43LS42LTEuMy0xLjQtMS43LTIuMy0uNC0uOS0uNy0xLjktLjgtM2gyLjRaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTc2LjEsMTlsLjQuMi03LjIsNC41di0yLjdsNy41LTQuN2gxLjh2MjVoLTIuNHYtMjIuM1oiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTc4LjgsNjguNGgxLjVsMi45LDcuMWgtMS40bC0uNi0xLjZoLjJjMCwuMS0zLjYuMS0zLjYuMWguMmMwLS4xLS42LDEuNS0uNiwxLjVoLTEuNGwyLjktNy4xWk03OCw3Mi45aDIuOSwwYzAsLjEtMS40LTMuMy0xLjQtMy4zaC4xbC0xLjQsMy40aDBaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTkzLjQsNjguNGgxLjJsNC4xLDUuMmgwczAtNS4yLDAtNS4yaDEuM3Y3LjFoLTEuMmwtNC4yLTUuMWgwczAsNS4xLDAsNS4xaC0xLjN2LTcuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTEwLjQsNjguNGg1Ljl2MS4yaC01Ljl2LTEuMlpNMTEyLjcsNjkuNGgxLjN2Ni4xaC0xLjN2LTYuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTI4LDY4LjRoMS41bDIuOSw3LjFoLTEuNGwtLjYtMS42aC4yYzAsLjEtMy42LjEtMy42LjFoLjJjMC0uMS0uNiwxLjUtLjYsMS41aC0xLjRsMi45LTcuMVpNMTI3LjIsNzIuOWgyLjksMGMwLC4xLTEuNC0zLjMtMS40LTMuM2guMWwtMS40LDMuNGgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNDIuNiw2OC40aDEuM3Y2LjFoLS4xYzAtLjEsMy45LS4xLDMuOS0uMXYxLjFoLTUuMXYtNy4xWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTYuMiw2OC40aDEuNWwxLjksMy4yaC0uMWwxLjktMy4yaDEuNWwtMy4zLDUuNC0zLjMtNS40Wk0xNTguOSw3Mi42aDEuM3YyLjloLTEuM3YtMi45WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNzQuNCw2OC40aDEuNWwyLjksNy4xaC0xLjRsLS42LTEuNmguMmMwLC4xLTMuNi4xLTMuNi4xaC4yYzAtLjEtLjYsMS41LS42LDEuNWgtMS40bDIuOS03LjFaTTE3My43LDcyLjloMi45LDBjMCwuMS0xLjQtMy4zLTEuNC0zLjNoLjFsLTEuNCwzLjRoMFoiLz4KPC9zdmc+" alt="COP31">
+      </div>
+      <div class="event-card-body">
+        <div class="event-label">🌍 İklim Zirvesi</div>
+        <div class="event-name">COP31 — BM İklim Değişikliği Konferansı</div>
+        <div class="event-date">📅 9 – 20 Kasım 2026</div>
+        <div class="event-venue">📍 Antalya Expo Center · Antalya, Türkiye</div>
+      </div>
+    </div>
+  </div>
+  <div class="event-card iac">
+    <div class="event-card-inner">
+      <div class="event-card-logo">
+        <img src="data:image/png;base64,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" alt="IAC 2026">
+      </div>
+      <div class="event-card-body">
+        <div class="event-label">🚀 Uzay Kongresi</div>
+        <div class="event-name">IAC 2026 — 77. International Astronautical Congress</div>
+        <div class="event-date">📅 5 – 9 Ekim 2026</div>
+        <div class="event-venue">📍 NEST Convention Centre · Belek, Antalya</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EVENTS DETAIL -->
+<section class="events-section">
+  <div class="container">
+    <div class="section-tag">Küresel Gündem · 2026</div>
+    <h2 class="section-title">İki Büyük Küresel Organizasyon,<br>Tek Stratejik Konum</h2>
+    <p class="section-lead">Antalya 2026'da hem uzay hem de iklim gündeminin odağı haline geliyor. Belconti Resort Hotel bu tarihi süreçte kongre katılımcıları için mükemmel konaklama ve toplantı çözümleri sunuyor.</p>
+
+    <div class="events-grid">
+      <!-- COP31 -->
+      <div class="event-info-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNzkgODEiPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAzMC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuMSBCdWlsZCAxMzYpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogIzFiNzViYjsKICAgICAgfQoKICAgICAgLnN0MSB7CiAgICAgICAgZmlsbDogIzQyYjg3ZDsKICAgICAgfQoKICAgICAgLnN0MiB7CiAgICAgICAgZmlsbDogIzEyNGRhMTsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgZmlsbDogI2VjMjAyNDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTU4LjMsNzIuOWMuMi0uMi41LS40LjctLjctNS43LDIuNS0xMi4zLDUuNC0xOC4yLDguOCw2LjItMSwxMi4zLTMuNywxNy40LTguMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMjEuOCwyMmM2LjIsNC4xLDEwLjUsNi4zLDE4LDYuMywyLjIsMCwyLjktMy42LDcuOC0xMC41LDIuMi0zLTMuNy01LjgtNS40LTYuMS4yLDMuMiwyLDcuMi44LDkuMy0xLjYsMi45LTkuMiwyLjctMTMsMS4zLDkuOSwxLjMsOC40LTQuNyw5LjctMTAuOS0yLjMtLjMtNC43LS40LTcuMS0uMnMtMi45LjUtNC4yLDEuMS0xLjEuNS0xLjguNmMwLDAtLjEsMC0uMiwwLTEuNywwLTMuNC4zLTUsMXMtMy4xLDEuNC00LjUsMi4zYy45LDIuMiwyLjQsNC4xLDQuOCw1LjdaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTM1LjMsMzcuMWMxLjMsMS41LDEuMSwzLjQuOCw1LjRzLjIsMy44LDEuMiw1LjRoMGMuNS43LDEuMSwxLjQsMS44LDEuOSwxLjMuOSwyLjcsMS44LDMuNiwyLjcuNC40LjguOSwxLjEsMS4zLDAsMCwwLDAsMCwwLDEuMS0zLC4zLTYuMy0yLjItOC40cy0uNy0uNy0xLTFjLTEuOS0yLjUtMi4yLTQuNS0yLjItNi4zcy4zLTMuMy45LTQuOGwuOC0yLjFjLjMtLjgtLjMtMS42LTEuMS0xLjUtMy45LjItNi41LS41LTkuNy0xLjgtNC44LTEuOS0xMS4yLTUuNy0xNC4xLTEwLjQtMSwuNy0yLDEuNS0zLDIuMy0uMy4zLS42LjYtLjkuOCw0LjIsNC45LDYuNywxLjIsMTYuNSwxMy4yLDMuMSwzLjgsNS42LDEuNCw3LjMsMy40WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zOC42LDUxLjJjMCwuNSwxLjIsNC44LDEuMyw1LjIuNCwxLjYuNywzLjIuOCw0LjYuMS0uMy45LTIsMS42LTMuNnMwLTQuMS0xLjktNS0xLjUtLjgtMS44LTEuM1oiLz4KICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNjkuOSwzOS43Yy0uOSw2LjctNC41LDE2LjMtOC4zLDE4LjQtMi41LDEuNC01LjMsMi4xLTguMiwyLjQtNSwuNS05LjQsMy4yLTEyLjEsNy40LTEuNywyLjctMy42LDUuMi01LjMsNi42LDEuNS4zLDQuNS0xLjUsNi40LTEuOC0xLjcsMS42LTQuNSwzLjctNy4xLDQtMiwuMi00LC44LTYsMS40LTIuMS43LTQuNCwxLjMtNS44LDEuMSwwLDAsMCwwLDAsLjEsMCwwLC4xLDAsLjIsMCw2LjgsMi40LDE0LjMsMS42LDIwLjYtMS45LDMuMy0xLjgsNi42LTMuNSw5LjgtNSwuNC0uMi45LS40LDEuMy0uNiw2LjItMi44LDExLjEtOCwxMy4zLTE0LjUsMS45LTUuNywyLjMtMTEuOCwxLjItMTcuN1oiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNTkuNywyMC45YzMuNywyMS4zLS45LDI1LjUtNS4zLDI3LjUtMywxLjQtNS41LDMuNS02LjYsNi43LDAsLjEsMCwuMi0uMS40LS42LDEuOC43LDMuNiwyLjYsMy42aDBjLjMsMCwuNiwwLC45LDAsNi43LS4zLDEyLjUtNC45LDE0LjYtMTEuMi4yLS41LjQtMS4xLjUtMS42LDIuNi03LjgsMS4xLTE2LjUtNC4zLTIyLjdzMCwwLS4xLS4xYy0uNy0uOC0xLjUtMS42LTIuMy0yLjRaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTMxLjgsNTYuNWMwLS45LS4zLTEuOC0uOS0yLjQtMi4zLTIuMy02LjMtMy01LjctNi45LjItMS40LDIuMi0zLjIsMi01LjEtLjItMS43LTQuNS04LjUtNS44LTMtLjUsMi4xLTEuMywzLjYtMy44LDUuOC0yLjQsMi4xLTQuMywxLjQtNC4zLDMsMCwxLjYsNy40LDEuOSw4LjQsMy4yLjMuNC44LDEuOS43LDIuNi0zLjctNS41LTcuNS0yLjctNS45LS44LjIuMy42LDAsLjYtLjMsMC0uMiwwLS4zLDAtLjUsMC0uMy4zLS41LjUtLjQuMSwwLC4zLjIuNC40LjksMS4yLDUuMSw0LjIsNiw2LjEuOSwxLjksNi45LDMuNiw4LjMsNC0uMy0yLjEtLjQtNC0uMy01LjdaIi8+CiAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTMyLjYsNjUuNGMtLjItMS4xLS40LTIuMS0uNi0zLjEtNC4xLDEtOS45LTMuNS0xMS4yLTUuMS0yLjMtMi43LTguOC00LjYtOS40LTguOS0uMS0xLC4yLTIuNSwxLjQtMy4zLDIuMy0xLjcsNC42LTEuOSw4LjItOC43LDIuNC00LjcsNy44LDIuMSw3LjUsNS4zLjIsMi41LTMsNS41LTEuNSw4LC44LDEuMywyLjIsMi40LDMuNywzLjQuNS40LDEuMywwLDEuNC0uNi4xLS43LjUtMS4zLjMtMS44LTMuMy05LjgsMi4yLTcuMS0uMS0xMi0uOC0xLjYtMy42LTItNS0zLjEtMi41LTItNC4xLTQuOC02LjUtNi43LTMuMS0yLjMtNy40LTQtOS44LTYuOC0uMi0uMi0uMy0uNC0uNS0uNi0uNC40LS43LjctMS4xLDEuMS0xLjEsMS4yLTEuMSwzLjEuMiw0LjMuNC4zLjcuNywxLjEsMS4xLS42LS4yLTEuMS0uNC0xLjYtLjctMS40LS43LTMuMS0uMi00LDEuMi0xLjEsMS44LTEuOSwzLjYtMi42LDUuNSwzLjIsMCw2LjUsMCw5LjMuOSw5LjIsMy4yLTUuOSwxMi4xLTUuOSwxNS43LDAsMyw1LjcsNC40LDguNCw2LjMsNCwyLjcsMy4yLDEwLjMsMi44LDEyLjktLjEuNywwLDEuNC4zLDIsMCwuMS4xLjIuMy4zLDEuOSwyLjIsNS41LDEuNiw2LjgtMSwuNC0uNy44LTEuNCwxLjItMS45LS4xLDEuMS0uMywyLjMtLjUsMy40LS4zLDEuOCwxLjUsMy4yLDMuMSwyLjRoMGMuNC0uMi44LS40LDEuMi0uNiwyLjEtMS40LDQuNC00LDMuMy04LjhaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTEzLjQsNjAuN2MtMi4xLTMuOS0xOC4yLTUuMS0xMC40LTEyLjYsMi41LTIuNCw3LjYtNS4xLDcuNy03LjguMS0yLjgtNC40LTMuNy05LjEtMy42LTMuMSwxMS0uOCwyMy4zLDcuMiwzMi41LDAsMCwwLDAsMCwwLDEuNSwxLjcsNC4zLDEsNC44LTEuMy42LTIuNi45LTUuMi0uMi03LjNaIi8+CiAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTM5LjEsNjYuMmMuNi0yLjUuNi01LjYtLjQtOS41LS44LTMuMy4yLTcuMS02LjItMTIuMywwLDAsMi4xLDIuNSwxLjYsNC42LS41LDIuMS0yLDgtLjIsMTYuMSwxLjMsNS44LTEuOSw4LjktMy45LDEwLjEtLjQuMi0uOS41LTEuMy43LTIuNCwxLjEtNi40LDEuNC04LjkuMi0yLjQtMS4yLTQuNy0yLjctNS40LTUuMy41LDIuOCwyLjYsNC42LDUsNi4xLDQsMi40LDEwLjIuOCwxMy43LTEuOCwxMS43LTguMSwxNi44LTI4LjYsMTguMi00Mi0yLjQsOS4zLTUuOCwyMy4zLTEyLjMsMzMuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNDYuMSwxMS44czYsMi4yLDEuNSw4LjhjLTMuOSw1LjctMTAuNiwyMS4yLTEuMywyNS44LDcuMiwzLjYsMTEuNC0zLjgsMTIuNS04LjksMS40LTYuMi0xLjItMTcuOC40LTIxLjksMS4yLTMsNC4yLTIuMiw0LjItMi4yLDAsMC02LjctMy43LTYuOCwxMS41LS4xLDE0LjMtNS42LDE3LjItNi40LDE4LjMsMCwwLDQuOS02LjIsNS4zLTE5LjUuMi03LjktLjctMTIuOS03LjUtMTQuOSwwLDAsOC41LDQuMSwyLjcsMTUuNHMtNC4yLDEzLjUtMy43LDE4LjFjMCwwLTMuNS00LjEsMC0xMi40LDMuNC04LjMsOC40LTE2LjgtLjktMTguMloiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNzUuNyw0Ni41djMuN2g1LjF2MTMuM2g0LjZ2LTEzLjNoNS4xdi0zLjdoLTE0LjhaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTkyLjMsNDYuNXYzLjZoNC42di0zLjZoLTQuNlpNMTAyLjQsNDYuNXYzLjZoNC42di0zLjZoLTQuNlpNMTAyLjQsNTEuNHY1LjZjMCwuNS0uMSwxLS40LDEuNC0uMi40LS42LjctMSwxLS40LjItLjkuNC0xLjQuNHMtMS0uMS0xLjQtLjRjLS40LS4yLS43LS42LTEtMS0uMi0uNC0uNC0uOS0uNC0xLjR2LTUuNmgtNC42djZjMCwxLjMuMywyLjQuOSwzLjQuNi45LDEuNSwxLjcsMi42LDIuMiwxLjEuNSwyLjQuOCwzLjkuOHMyLjctLjMsMy45LS44YzEuMS0uNSwyLTEuMiwyLjYtMi4yLjYtLjkuOS0yLjEuOS0zLjR2LTZoLTQuNloiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTIwLDU3LjJjLjktLjQsMS42LTEsMi4xLTEuOC41LS44LjgtMS45LjgtMy4xcy0uMy0yLjMtLjgtMy4xYy0uNS0uOS0xLjMtMS41LTIuMi0yLTEtLjUtMi4xLS43LTMuMy0uN2gtNy40djE3LjFoNC42di01LjZoMS42bDMsNS42aDVsLTMuNS02LjRaTTExNy44LDUzLjVjLS4yLjMtLjUuNS0uOS43LS40LjEtLjkuMi0xLjQuMmgtMS42di00LjFoMS42Yy41LDAsMSwwLDEuNC4yLjQuMS43LjQuOS43LjIuMy4zLjcuMywxLjJzLS4xLjktLjMsMS4yWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMzQuNSw1NC4xbDIuNC0zLjEuOS0xLjIsMi41LTMuM2gtNS40bC01LjEsNi45aC0uMnYtNi45aC00LjZ2MTcuMWg0LjZ2LTQuNGwxLjUtMiwzLjgsNi40aDUuNWwtNS45LTkuNVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTQxLjcsNTEuNHYxMi4yaDQuNnYtMTIuMmgtNC42Wk0xNDEuNyw0Ni41djMuN2g0LjZ2LTMuN2gtNC42WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTkuOCw0Ni41bC0zLjMsNi45aC0uMWwtMy4zLTYuOWgtNS4ybDYuMywxMS43djUuNGg0LjZ2LTUuNGw2LjMtMTEuN2gtNS4yWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNzguOCw1MC4ydi0zLjdoLTEyLjN2MTcuMWgxMi4zdi0zLjdoLTcuNnYtMi45aDd2LTMuN2gtN3YtMi45aDcuN1oiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05OS44LDMyLjhjLS4zLDEuMy0uOSwyLjYtMS42LDMuNi0uNywxLjEtMS42LDItMi42LDIuNy0xLC43LTIuMSwxLjMtMy40LDEuNy0xLjIuNC0yLjYuNi00LC42cy0zLjUtLjMtNS0uOWMtMS41LS42LTIuOS0xLjUtNC0yLjYtMS4xLTEuMS0yLTIuNC0yLjYtNC0uNi0xLjUtLjktMy4yLS45LTVzLjMtMy41LjktNS4xYy42LTEuNSwxLjUtMi45LDIuNi00czIuNC0yLDQtMi42YzEuNS0uNiwzLjItLjksNS0uOXMyLjcuMiwzLjkuNmMxLjIuNCwyLjMuOSwzLjMsMS42LDEsLjcsMS45LDEuNiwyLjYsMi42LjcsMSwxLjMsMi4xLDEuNiwzLjRoLTIuNWMtLjctMS45LTEuOS0zLjMtMy40LTQuNC0xLjYtMS4xLTMuNC0xLjYtNS42LTEuNnMtMi44LjMtNCwuOGMtMS4yLjUtMi4zLDEuMi0zLjIsMi4xLS45LjktMS42LDItMi4xLDMuMy0uNSwxLjMtLjgsMi42LS44LDQuMXMuMywyLjkuOCw0LjFjLjUsMS4zLDEuMiwyLjMsMi4xLDMuMy45LjksMiwxLjYsMy4yLDIuMSwxLjIuNSwyLjYuOCw0LC44LDIuMiwwLDQuMS0uNiw1LjctMS43LDEuNi0xLjEsMi44LTIuNywzLjUtNC43aDIuNFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDkuMiw0MC41Yy0xLjUtLjYtMi45LTEuNS00LTIuNi0xLjEtMS4xLTItMi40LTIuNi0zLjktLjYtMS41LS45LTMuMi0uOS01LjFzLjMtMy41LjktNS4xYy42LTEuNSwxLjUtMi45LDIuNi00czIuNC0yLDQtMi42YzEuNS0uNiwzLjItLjksNS4xLS45czMuNS4zLDUuMS45YzEuNS42LDIuOSwxLjUsNCwyLjYsMS4xLDEuMSwyLDIuNCwyLjYsNCwuNiwxLjUuOSwzLjIuOSw1LjFzLS4zLDMuNS0uOSw1LjFjLS42LDEuNS0xLjUsMi45LTIuNiwzLjktMS4xLDEuMS0yLjQsMS45LTQsMi42LTEuNS42LTMuMi45LTUuMS45cy0zLjUtLjMtNS4xLS45Wk0xMTguNCwzOC40YzEuMi0uNSwyLjMtMS4yLDMuMi0yLjFzMS42LTIsMi4xLTMuM2MuNS0xLjMuOC0yLjcuOC00LjJzLS4zLTIuOS0uOC00LjJjLS41LTEuMy0xLjItMi40LTIuMS0zLjMtLjktLjktMi0xLjYtMy4yLTIuMS0xLjItLjUtMi42LS44LTQuMS0uOHMtMi44LjMtNC4xLjhjLTEuMi41LTIuMywxLjItMy4yLDIuMS0uOS45LTEuNiwyLTIuMSwzLjMtLjUsMS4zLS43LDIuNy0uNyw0LjJzLjIsMi45LjcsNC4yYy41LDEuMywxLjIsMi40LDIuMSwzLjMuOS45LDIsMS42LDMuMiwyLjEsMS4yLjUsMi42LjgsNC4xLjhzMi45LS4zLDQuMS0uOFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjkuNSwxNi41aDEwLjVjMS4yLDAsMi4yLjIsMy4yLjYsMSwuNCwxLjguOSwyLjUsMS42LjcuNywxLjMsMS41LDEuNiwyLjQuNC45LjYsMiwuNiwzLjFzLS4yLDIuMS0uNiwzLjFjLS40LjktLjksMS44LTEuNiwyLjQtLjcuNy0xLjUsMS4yLTIuNSwxLjYtMSwuNC0yLjEuNi0zLjIuNmgtOC43di0yLjFoOC41YzEuOCwwLDMuMy0uNSw0LjMtMS42LDEtMSwxLjUtMi40LDEuNS00cy0uNS0zLTEuNS00LjFjLTEtMS0yLjQtMS42LTQuMy0xLjZoLTguM2wuNC0uNHYyMy4xaC0yLjR2LTI0LjhaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9InN0MSIgZD0iTTE1Mi41LDM0Yy4xLDEuNS43LDIuOCwxLjgsMy43LDEuMS45LDIuNCwxLjQsNC4xLDEuNHMzLjItLjUsNC4zLTEuNWMxLjEtMSwxLjctMi4zLDEuNy00cy0uMS0xLjYtLjQtMi4yYy0uMy0uNy0uNy0xLjItMS4yLTEuNy0uNS0uNS0xLjItLjgtMS45LTEuMS0uNy0uMi0xLjUtLjQtMi40LS40aC0zLjd2LTEuNmw3LjctOC40di4zYy4xLDAtMTEuOCwwLTExLjgsMHYtMi4yaDE1djEuN2wtNy44LDguNC0uMi0uNGgxLjFjMS4yLDAsMi4zLjIsMy4zLjYsMSwuNCwxLjguOSwyLjUsMS41LjcuNywxLjMsMS41LDEuNywyLjQuNC45LjYsMiwuNiwzLjFzLS4yLDIuMi0uNiwzLjJjLS40LjktMSwxLjctMS43LDIuNC0uOC43LTEuNiwxLjItMi43LDEuNS0xLC40LTIuMS41LTMuMy41cy0yLjItLjItMy4yLS41Yy0xLS4zLTEuOC0uOC0yLjUtMS41LS43LS42LTEuMy0xLjQtMS43LTIuMy0uNC0uOS0uNy0xLjktLjgtM2gyLjRaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTc2LjEsMTlsLjQuMi03LjIsNC41di0yLjdsNy41LTQuN2gxLjh2MjVoLTIuNHYtMjIuM1oiLz4KICA8L2c+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTc4LjgsNjguNGgxLjVsMi45LDcuMWgtMS40bC0uNi0xLjZoLjJjMCwuMS0zLjYuMS0zLjYuMWguMmMwLS4xLS42LDEuNS0uNiwxLjVoLTEuNGwyLjktNy4xWk03OCw3Mi45aDIuOSwwYzAsLjEtMS40LTMuMy0xLjQtMy4zaC4xbC0xLjQsMy40aDBaIi8+CiAgPHBhdGggY2xhc3M9InN0MiIgZD0iTTkzLjQsNjguNGgxLjJsNC4xLDUuMmgwczAtNS4yLDAtNS4yaDEuM3Y3LjFoLTEuMmwtNC4yLTUuMWgwczAsNS4xLDAsNS4xaC0xLjN2LTcuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTEwLjQsNjguNGg1Ljl2MS4yaC01Ljl2LTEuMlpNMTEyLjcsNjkuNGgxLjN2Ni4xaC0xLjN2LTYuMVoiLz4KICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTI4LDY4LjRoMS41bDIuOSw3LjFoLTEuNGwtLjYtMS42aC4yYzAsLjEtMy42LjEtMy42LjFoLjJjMC0uMS0uNiwxLjUtLjYsMS41aC0xLjRsMi45LTcuMVpNMTI3LjIsNzIuOWgyLjksMGMwLC4xLTEuNC0zLjMtMS40LTMuM2guMWwtMS40LDMuNGgwWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNDIuNiw2OC40aDEuM3Y2LjFoLS4xYzAtLjEsMy45LS4xLDMuOS0uMXYxLjFoLTUuMXYtNy4xWiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNTYuMiw2OC40aDEuNWwxLjksMy4yaC0uMWwxLjktMy4yaDEuNWwtMy4zLDUuNC0zLjMtNS40Wk0xNTguOSw3Mi42aDEuM3YyLjloLTEuM3YtMi45WiIvPgogIDxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNzQuNCw2OC40aDEuNWwyLjksNy4xaC0xLjRsLS42LTEuNmguMmMwLC4xLTMuNi4xLTMuNi4xaC4yYzAtLjEtLjYsMS41LS42LDEuNWgtMS40bDIuOS03LjFaTTE3My43LDcyLjloMi45LDBjMCwuMS0xLjQtMy4zLTEuNC0zLjNoLjFsLTEuNCwzLjRoMFoiLz4KPC9zdmc+" alt="COP31" style="height:54px; object-fit:contain; margin-bottom:20px; display:block;">
+        <div class="ei-theme">BM İklim Değişikliği Konferansı</div>
+        <h3>COP31 — Antalya 2026</h3>
+        <p>Birleşmiş Milletler İklim Değişikliği Çerçeve Sözleşmesi'nin 31. Taraflar Konferansı Antalya'da gerçekleşecek. İklim diplomasisi, sürdürülebilirlik, finans ve enerji alanlarında küresel liderleri, STK temsilcilerini ve özel sektörü bir araya getirecek bu dev organizasyon, Türkiye'nin sürdürülebilirlik gündemindeki en büyük uluslararası etkinliği olacak.</p>
+        <ul class="event-meta-list">
+          <li><span class="meta-icon">📅</span><span><span class="meta-label">Tarih:</span> 9 – 20 Kasım 2026</span></li>
+          <li><span class="meta-icon">📍</span><span><span class="meta-label">Mekan:</span> Antalya Expo Center, Antalya</span></li>
+          <li><span class="meta-icon">🌐</span><span><span class="meta-label">Organizasyon:</span> UNFCCC (BM İklim Değişikliği)</span></li>
+          <li><span class="meta-icon">🎯</span><span><span class="meta-label">Odak:</span> NDC 3.0, 1.5°C hedefi, iklim finansmanı</span></li>
+          <li><span class="meta-icon">👥</span><span><span class="meta-label">Katılımcı:</span> Hükümetler, STK, özel sektör, medya</span></li>
+          <li><span class="meta-icon">🌱</span><span><span class="meta-label">Green Zone:</span> Teknoloji, inovasyon, sivil katılım alanı</span></li>
+        </ul>
+      </div>
+
+      <!-- IAC 2026 -->
+      <div class="event-info-card gold-top">
+        <img src="data:image/png;base64,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" alt="IAC 2026" style="height:54px; object-fit:contain; margin-bottom:20px; display:block;">
+        <div class="ei-theme">"The World Needs More Space"</div>
+        <h3>IAC 2026 — 77. Uluslararası Astronotik Kongre</h3>
+        <p>Türkiye tarihinde ilk kez düzenlenen IAC 2026, uzay ajanslarını, havacılık/uzay şirketlerini, araştırmacıları ve politika yapıcıları bir araya getiriyor. NEST Convention Centre'da 20.000'e kadar katılımcıya ev sahipliği yapacak bu kongre için Belconti Resort Hotel, Belek'in en yakın ve donanımlı konaklama üssü konumunda.</p>
+        <ul class="event-meta-list">
+          <li><span class="meta-icon" style="color:var(--gold);">📅</span><span><span class="meta-label">Tarih:</span> 5 – 9 Ekim 2026</span></li>
+          <li><span class="meta-icon" style="color:var(--gold);">📍</span><span><span class="meta-label">Mekan:</span> NEST Convention Centre, Belek</span></li>
+          <li><span class="meta-icon" style="color:var(--gold);">🌐</span><span><span class="meta-label">Organizasyon:</span> IAF, Türk Uzay Ajansı (TUA)</span></li>
+          <li><span class="meta-icon" style="color:var(--gold);">🎯</span><span><span class="meta-label">Tema:</span> "The World Needs More Space"</span></li>
+          <li><span class="meta-icon" style="color:var(--gold);">👥</span><span><span class="meta-label">Katılımcı:</span> Uzay ajansları, şirketler, akademisyenler</span></li>
+          <li><span class="meta-icon" style="color:var(--gold);">🏨</span><span><span class="meta-label">Konum:</span> NEST'e yürüme mesafesinde konaklamalar</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BELCONTI -->
+<section class="why-section">
+  <div class="container">
+    <div class="section-tag">Neden Belconti?</div>
+    <h2 class="section-title">Kongre Katılımcıları İçin<br>İdeal Konaklama Üssü</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">📍</div>
+        <h4>Stratejik Konum</h4>
+        <p>NEST Convention Centre'a yakın konumuyla IAC delegasyonları için mükemmel. Antalya Havalimanı'na 30 dk, COP31 venue'ya kolay erişim.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏛️</div>
+        <h4>8 Toplantı & Etkinlik Salonu</h4>
+        <p>50 kişilik VIP oturumlardan 1.000 kişilik büyük organizasyonlara kadar 8 farklı salonu ile her ölçekte toplantı çözümü.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌿</div>
+        <h4>Yeşil Otel Sertifikaları</h4>
+        <p>GES, ISO 50001 enerji yönetimi ve 332 gün güneş enerjisi altyapısıyla COP31'in sürdürülebilirlik vizyonuyla örtüşen bir konaklama deneyimi.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📡</div>
+        <h4>Profesyonel Teknik Altyapı</h4>
+        <p>Yüksek hızlı Wi-Fi, yüksek çözünürlüklü projeksiyon, kablosuz mikrofon sistemleri ve sahne ekipmanlarıyla donanımlı salonlar.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🍽️</div>
+        <h4>Resort Konforu</h4>
+        <p>2025'te tamamen yenilenen modern tesiste kafeterya, restoranlar ve spa ile yoğun kongre programı sonrası tam bir dinlenme deneyimi.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h4>Profesyonel Organizasyon Desteği</h4>
+        <p>Planlama aşamasından etkinlik sonrasına kadar uzman ekip, özel transferler ve 7/24 destek hizmetiyle yanınızda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEETING ROOMS -->
+<section class="rooms-section" id="toplanti">
+  <div class="container">
+    <div class="section-tag">Toplantı & Etkinlik Alanları</div>
+    <h2 class="section-title">8 Profesyonel Salon,<br>Her Ölçekte Çözüm</h2>
+    <p class="section-lead">Belconti Resort Hotel'in toplam 8 toplantı ve balo salonu, 50 kişilik VIP oturumlardan 1.000 kişilik büyük kongreye kadar her formatı karşılar.</p>
+
+    <div class="rooms-grid">
+      <!-- Ballroom -->
+      <div class="room-card featured">
+        <div class="room-name">🎭 Balo Salonu (Ballroom 1 · 2 · 3)</div>
+        <div class="room-stats">
+          <div class="room-stat">
+            <div class="room-stat-value">855</div>
+            <div class="room-stat-label">m² Toplam Alan</div>
+          </div>
+          <div class="room-stat">
+            <div class="room-stat-value">1.000</div>
+            <div class="room-stat-label">Kişi Kapasitesi</div>
+          </div>
+          <div class="room-stat">
+            <div class="room-stat-value">3</div>
+            <div class="room-stat-label">Bölünebilir Salon</div>
+          </div>
+        </div>
+        <div class="room-desc">IAC ve COP31 büyük grup etkinlikleri, gala akşamları, plenery oturumlar ve networking organizasyonları için Antalya'nın en prestijli toplantı salonlarından biri. Üç bölüme ayrılabilir esnek yapısıyla her formata uyum sağlar.</div>
+        <div class="room-sub">
+          <div class="room-sub-item"><span class="room-sub-name">Ballroom 1</span><span class="room-sub-cap">240 m² · 240 kişi</span></div>
+          <div class="room-sub-item"><span class="room-sub-name">Ballroom 2</span><span class="room-sub-cap">344 m² · 420 kişi</span></div>
+          <div class="room-sub-item"><span class="room-sub-name">Ballroom 3</span><span class="room-sub-cap">276 m² · 340 kişi</span></div>
+        </div>
+      </div>
+
+      <!-- Papatya -->
+      <div class="room-card">
+        <div class="room-name">🌼 Papatya Salonu</div>
+        <div class="room-stats">
+          <div class="room-stat"><div class="room-stat-value">394</div><div class="room-stat-label">m²</div></div>
+          <div class="room-stat"><div class="room-stat-value">340</div><div class="room-stat-label">Kişi</div></div>
+        </div>
+        <div class="room-desc">Orta ölçekli konferanslar, eğitim programları ve panel etkinlikleri için ideal. Tam teknik donanımlı.</div>
+      </div>
+
+      <!-- Fuaye -->
+      <div class="room-card">
+        <div class="room-name">🏛️ Fuaye Alanı</div>
+        <div class="room-stats">
+          <div class="room-stat"><div class="room-stat-value">360</div><div class="room-stat-label">m²</div></div>
+          <div class="room-stat"><div class="room-stat-value">500</div><div class="room-stat-label">Kişi</div></div>
+        </div>
+        <div class="room-desc">Kokteyl resepsiyonları, kayıt masaları, sergi alanları ve kahve molaları için geniş ve çok amaçlı alan.</div>
+      </div>
+
+      <!-- Yasemin -->
+      <div class="room-card">
+        <div class="room-name">🌸 Yasemin Salonu</div>
+        <div class="room-stats">
+          <div class="room-stat"><div class="room-stat-value">103</div><div class="room-stat-label">m²</div></div>
+          <div class="room-stat"><div class="room-stat-value">110</div><div class="room-stat-label">Kişi</div></div>
+        </div>
+        <div class="room-desc">Seminer, atölye ve orta boy organizasyonlar için. Tiyatro ve sınıf düzeni seçenekleriyle esnek kullanım.</div>
+      </div>
+
+      <!-- Fulya & Mimoza -->
+      <div class="room-card">
+        <div class="room-name">🌺 Fulya & Mimoza</div>
+        <div class="room-stats">
+          <div class="room-stat"><div class="room-stat-value">97+97</div><div class="room-stat-label">m²</div></div>
+          <div class="room-stat"><div class="room-stat-value">100</div><div class="room-stat-label">Kişi/Salon</div></div>
+        </div>
+        <div class="room-desc">İkili breakout oturumlar, paralel toplantılar veya küçük grup eğitimleri için yan yana iki salon.</div>
+      </div>
+
+      <!-- Nergiz -->
+      <div class="room-card">
+        <div class="room-name">🌷 Nergiz — VIP Salonu</div>
+        <div class="room-stats">
+          <div class="room-stat"><div class="room-stat-value">49</div><div class="room-stat-label">m²</div></div>
+          <div class="room-stat"><div class="room-stat-value">50</div><div class="room-stat-label">Kişi</div></div>
+        </div>
+        <div class="room-desc">Özel yönetici toplantıları, VIP görüşmeler ve küçük delegasyon brifinglari için konforlu, butik alan.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNICAL EQUIPMENT -->
+<section class="tech-section">
+  <div class="container">
+    <div class="tech-grid">
+      <div>
+        <div class="section-tag">Teknik Altyapı</div>
+        <h2 class="section-title">Profesyonel Donanım,<br>Kesintisiz Bağlantı</h2>
+        <p class="section-lead" style="margin-bottom:32px;">Tüm toplantı salonlarımız uluslararası kongre standartlarında teknik ekipmanlarla donatılmıştır.</p>
+        <ul class="tech-list">
+          <li>Yüksek çözünürlüklü projeksiyon sistemleri</li>
+          <li>Kablosuz mikrofon ve profesyonel ses sistemleri</li>
+          <li>Yüksek hızlı Wi-Fi internet bağlantısı (tüm alanlarda)</li>
+          <li>Barkovizyon ve LED ekran sistemleri</li>
+          <li>Sahne, kürsü ve konuşmacı ekipmanları</li>
+          <li>Işık ve ses kontrol sistemleri</li>
+          <li>Teknik destek personeli (etkinlik süresince)</li>
+          <li>Yazı tahtaları, flipchart ve toplantı malzemeleri</li>
+        </ul>
+      </div>
+      <div>
+        <div class="section-tag">Oturma Düzenleri</div>
+        <h2 class="section-title">Her Formata<br>Uyum Sağlar</h2>
+        <p style="font-size:15px; color:var(--gray-mid); line-height:1.8; margin-bottom:28px;">
+          Salonlarımız katılımcı sayısına ve etkinlik formatına göre farklı düzenlere adapte edilebilir. Etkinliğinizin ihtiyacına göre en uygun konfügürasyonu önerelim.
+        </p>
+        <div>
+          <span class="tech-layout-badge">🎭 Tiyatro Düzeni</span>
+          <span class="tech-layout-badge">📚 Sınıf Düzeni</span>
+          <span class="tech-layout-badge">🍸 Kokteyl</span>
+          <span class="tech-layout-badge">⊓ U Düzeni</span>
+          <span class="tech-layout-badge">⬭ Oval / Masa Başı</span>
+          <span class="tech-layout-badge">🍽️ Banket</span>
+        </div>
+        <div style="margin-top:36px; padding:28px; background:var(--green-pale); border-radius:14px; border-left:4px solid var(--green-bright);">
+          <div style="font-weight:700; color:var(--green-dark); font-size:16px; margin-bottom:12px;">📞 Etkinlik Destek Hattı</div>
+          <div style="font-size:14px; color:var(--gray-mid); line-height:1.8;">
+            Toplantı ve etkinlik talepleriniz için profesyonel organizasyon ekibimiz planlama aşamasından başlayarak tüm süreçte yanınızda.<br><br>
+            <strong style="color:var(--green-dark);">+90 242 715 15 45</strong><br>
+            <a href="mailto:info@belconti.com" style="color:var(--green-mid);">info@belconti.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUSTAINABILITY -->
+<section class="sustain-section" id="surdurulebilirlik">
+  <div class="container">
+    <div class="section-tag">Sürdürülebilirlik</div>
+    <h2 class="section-title">COP31 Ruhuyla Yeşil Konaklama</h2>
+    <p class="section-lead">Belconti Resort Hotel, COP31'in sürdürülebilirlik gündemini kendi operasyonlarında hayata geçiriyor. Çevre dostu bir otelde konaklamak artık bilinçli bir tercih.</p>
+
+    <div class="sustain-stats">
+      <div class="stat-block">
+        <div class="stat-num">332</div>
+        <div class="stat-desc">Yıllık Güneş Enerjisi Günü — Güneş ısı panelleri</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">ISO</div>
+        <div class="stat-desc" style="color:var(--green-light);">50001 Enerji Yönetim Sistemi Sertifikası</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">0</div>
+        <div class="stat-desc">Zero-Waste yaklaşımı — Atık azaltma hedefi</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">GES</div>
+        <div class="stat-desc" style="color:var(--green-light);">Yeşil Yıldız Sürdürülebilirlik Belgesi</div>
+      </div>
+    </div>
+
+    <div class="sustain-certs">
+      <div class="cert-badge">🌿 GES — Yeşil Otel Belgesi</div>
+      <div class="cert-badge">⚡ ISO 50001 Enerji Yönetimi</div>
+      <div class="cert-badge">☀️ 332 Gün Güneş Enerjisi</div>
+      <div class="cert-badge">💧 Su & Atık Yönetimi</div>
+      <div class="cert-badge">🌱 Green Stay Certificate</div>
+      <div class="cert-badge">♻️ Zero-Waste Yaklaşımı</div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages-section" id="paketler">
+  <div class="container">
+    <div class="section-tag">MICE Paketleri</div>
+    <h2 class="section-title">Etkinliğinize Özel<br>Çözümler</h2>
+    <p class="section-lead">IAC 2026 ve COP31 katılımcıları için hazırladığımız özel paketler; konaklama, toplantı ve etkinlik ihtiyaçlarınızı tek çatı altında karşılar.</p>
+
+    <div class="packages-grid">
+      <div class="package-card">
+        <div class="package-icon">🚀</div>
+        <div class="package-title">IAC Executive Stay</div>
+        <ul class="package-list">
+          <li>Konaklama + kahvaltı dahil</li>
+          <li>Hızlı havalimanı transfer opsiyonu</li>
+          <li>Sessiz çalışma alanı & Wi-Fi</li>
+          <li>Erken/geç check-in opsiyonu</li>
+          <li>Özel karşılama paketi</li>
+        </ul>
+      </div>
+      <div class="package-card gold-b">
+        <div class="package-icon">🌍</div>
+        <div class="package-title">Space Delegation Package</div>
+        <ul class="package-list">
+          <li>Grup oda kontenjanı</li>
+          <li>Özel toplantı odası tahsisi</li>
+          <li>Kahve molası & catering</li>
+          <li>Teknik ekipman desteği</li>
+          <li>Yüksek hızlı Wi-Fi & AV</li>
+        </ul>
+      </div>
+      <div class="package-card">
+        <div class="package-icon">🌿</div>
+        <div class="package-title">COP31 Green Stay</div>
+        <ul class="package-list">
+          <li>Sürdürülebilir konaklama deneyimi</li>
+          <li>Dijital Green Stay Sertifikası</li>
+          <li>GES & sertifika bilgi kartı</li>
+          <li>Yerel & organik F&B seçenekleri</li>
+          <li>STK ve iklim profesyonelleri için</li>
+        </ul>
+      </div>
+      <div class="package-card gold-b">
+        <div class="package-icon">🎙️</div>
+        <div class="package-title">Media Friendly Stay</div>
+        <ul class="package-list">
+          <li>Sessiz çalışma & medya alanı</li>
+          <li>Röportaj noktası kurulumu</li>
+          <li>Yüksek hızlı internet garantisi</li>
+          <li>Hızlı F&B servisi</li>
+          <li>Basın kiti & akreditasyon desteği</li>
+        </ul>
+      </div>
+      <div class="package-card">
+        <div class="package-icon">🥂</div>
+        <div class="package-title">Side Event & Networking</div>
+        <ul class="package-list">
+          <li>Özel kokteyl & panel organizasyonu</li>
+          <li>Networking kahvaltısı & buluşmaları</li>
+          <li>Özel menü tasarımı</li>
+          <li>Marka & sponsorluk alanı</li>
+          <li>Tam etkinlik yönetimi desteği</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section">
+  <div class="container">
+    <div class="location-grid">
+      <div class="location-info">
+        <div class="section-tag">Konum & Ulaşım</div>
+        <h2 class="section-title">Belek'in Kalbinde,<br>Her Şeye Yakın</h2>
+        <p style="font-size:15px; color:var(--gray-mid); line-height:1.8;">
+          Belconti Resort Hotel, IAC 2026'nın yapılacağı NEST Convention Centre'a ve COP31 venue Antalya Expo Center'a kolay erişim sağlayan stratejik konumundadır. Ücretsiz otopark ve transfer hizmetleriyle ulaşım sorunu yaşamazsınız.
+        </p>
+        <div class="dist-grid">
+          <div class="dist-card">
+            <div class="dist-km">30 km</div>
+            <div class="dist-label">Antalya Havalimanı</div>
+          </div>
+          <div class="dist-card">
+            <div class="dist-km">35 km</div>
+            <div class="dist-label">Antalya Şehir Merkezi</div>
+          </div>
+          <div class="dist-card">
+            <div class="dist-km">Belek</div>
+            <div class="dist-label">NEST Convention Centre</div>
+          </div>
+          <div class="dist-card">
+            <div class="dist-km">Ücretsiz</div>
+            <div class="dist-label">Otopark Hizmeti</div>
+          </div>
+        </div>
+      </div>
+      <div class="map-embed">
+        <div class="map-placeholder-icon">📍</div>
+        <div class="map-address">
+          <strong style="color:var(--green-dark); font-size:16px;">Belconti Resort Hotel</strong><br>
+          Belek Mahallesi, İskele Caddesi No:10-Z01<br>
+          07500 Serik, Antalya, Türkiye
+        </div>
+        <a class="map-btn" href="https://maps.app.goo.gl/gP59xvoouoJjWZzB8" target="_blank">🗺️ Haritada Göster</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & FORM -->
+<section class="contact-section" id="basvuru">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-tag" style="color:var(--green-light);">İletişim & Rezervasyon</div>
+        <h2>IAC 2026 veya COP31 İçin<br>Hemen Teklif Alın</h2>
+        <p>Delegasyon konaklaması, toplantı salonu, yan etkinlik veya medya paketi için formu doldurun; uzman ekibimiz en kısa sürede size özel teklif hazırlasın.</p>
+        <ul class="contact-list">
+          <li><span class="c-icon">📞</span><span>+90 242 715 15 45 · +90 444 50 95</span></li>
+          <li><span class="c-icon">📧</span><span>info@belconti.com</span></li>
+          <li><span class="c-icon">📍</span><span>Belek Mah. İskele Cad. No:10, Serik, Antalya</span></li>
+          <li><span class="c-icon">💬</span><span><a href="https://api.whatsapp.com/send/?phone=905382798935" target="_blank" style="color:var(--green-light); text-decoration:none;">WhatsApp ile iletişim kurun</a></span></li>
+        </ul>
+        <a class="booking-cta" href="https://belconti-resort-hotel.hotelrunner.com/bv3/search?locale=tr" target="_blank">
+          🏨 Rezervasyon Yap
+        </a>
+      </div>
+
+      <div class="form-card">
+        <h3>Toplantı & Konaklama Talebi</h3>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Ad Soyad *</label>
+              <input type="text" placeholder="Adınız Soyadınız" required>
+            </div>
+            <div class="form-group">
+              <label>Şirket / Kurum</label>
+              <input type="text" placeholder="Kurum adı">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>E-posta *</label>
+              <input type="email" placeholder="email@domain.com" required>
+            </div>
+            <div class="form-group">
+              <label>Telefon</label>
+              <input type="tel" placeholder="+90 5xx xxx xx xx">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>İlgilendiğiniz Etkinlik *</label>
+            <select required>
+              <option value="" disabled selected>Seçiniz...</option>
+              <option>IAC 2026 — Ekim 2026</option>
+              <option>COP31 — Kasım 2026</option>
+              <option>Her İkisi (Ekim + Kasım)</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Paket Türü</label>
+              <select>
+                <option value="" disabled selected>Seçiniz...</option>
+                <option>IAC Executive Stay</option>
+                <option>Space Delegation Package</option>
+                <option>COP31 Green Stay</option>
+                <option>Media Friendly Stay</option>
+                <option>Side Event & Networking</option>
+                <option>Özel / Diğer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Kişi Sayısı</label>
+              <input type="number" placeholder="Tahmini kişi sayısı" min="1">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Notlar / Özel İstekler</label>
+            <textarea placeholder="Etkinlik tarihleri, özel gereksinimler, toplantı formatı vb."></textarea>
+          </div>
+          <button type="submit" class="form-submit">🚀 Teklif Talebi Gönder</button>
+          <div class="form-note">Ekibimiz 24 saat içinde size dönüş yapacaktır.</div>
+        </form>
+        <div class="form-success" id="formSuccess">
+          ✅ Talebiniz alındı! Ekibimiz 24 saat içinde sizinle iletişime geçecek.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img class="footer-logo" src="https://lh3.googleusercontent.com/d/1j7IYlL2EbGPgcMOvphw2Wf4GrnRk4T9e" alt="Belconti" onerror="this.onerror=null;this.style.display='none'">
+  <div>Belek Mahallesi İskele Caddesi No:10-Z01, 07500 Serik, Antalya, Türkiye</div>
+  <div>+90 444 50 95 · +90 242 715 15 45 · <a href="mailto:info@belconti.com">info@belconti.com</a></div>
+  <div class="footer-links">
+    <a href="https://www.belconti.com/TR/toplanti" target="_blank">Toplantı & MICE</a>
+    <a href="https://www.belconti.com/TR/surdurulebilirlik" target="_blank">Sürdürülebilirlik</a>
+    <a href="https://www.belconti.com/TR/galeri" target="_blank">Galeri</a>
+    <a href="https://www.belconti.com/TR/iletisim" target="_blank">İletişim</a>
+    <a href="https://unfccc.int/cop31" target="_blank">COP31 Resmi Site</a>
+    <a href="https://www.iac2026.org/" target="_blank">IAC 2026 Resmi Site</a>
+  </div>
+  <div style="margin-top:20px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08);">
+    © 2026 Belconti Resort Hotel · Tüm Hakları Saklıdır.
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Fade-in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.why-card, .room-card, .package-card, .event-info-card, .stat-block').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
